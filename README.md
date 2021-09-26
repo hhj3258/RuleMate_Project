@@ -1,6 +1,5 @@
 # 개요
-### (가제)메이브레이커 프로젝트
- 
+## (가제)메이브레이커 프로젝트
 
 # 팀 Blue Bird
 ### 팀원 및 역할
@@ -43,20 +42,20 @@
 
 
 # 사용 툴
-- 게임 엔진: 유니티(Unity)
+- 게임 엔진: 유니티(Unity) - Ver.2020.3.5f1
 - 언어: C#
 - Photon Unity Networking(PUN)
 - Cinemachine Camera
 
 
-# 서드파티 라이브러리
+# Plugins
 - DOTween
 
 
 # 사용 에셋
 
 
-# Commit Rule
+# Commit Rules
 type | 설명
 ---- | ----
 [feat] | 새로운 기능에 대한 커밋
