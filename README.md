@@ -6,7 +6,7 @@
 이름 | 역할 | GitHub
 ---|-----|---
 홍현준 | 팀장, 개발, git 관리 | [hhj3258](https://github.com/hhj3258)
-이지원 | 기획, PM | [Lee-JiWon0](https://github.com/Mellow1213)
+이지원 | 기획, PM | [Lee-JiWon0](https://github.com/Lee-JiWon0)
 김재혁 | 개발, 기획 보조 | [kimjhj11](https://github.com/kimjhj11)
 
 
