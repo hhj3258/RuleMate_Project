@@ -8,7 +8,10 @@
 홍현준 | 팀장, 개발, git 관리 | [hhj3258](https://github.com/hhj3258)
 이지원 | 기획, PM | [Lee-JiWon0](https://github.com/Lee-JiWon0)
 김재혁 | 개발, 기획 보조 | [kimjhj11](https://github.com/kimjhj11)
-
+강새미 | 아트
+임찬혁 | 아트
+박혜원 | 모델링
+유진아 | 디자인
 
 # 주제 및 기대효과
 - ### 프로젝트명
@@ -32,7 +35,7 @@
 폴더명 | 설명
 ---- | ----
 [docs](https://github.com/hhj3258/ContentsIT_Capston_Design/tree/main/docs) | 기술 문서, 기획서, WBS 등의 문서 폴더
-
+[Project](https://github.com/hhj3258/ContentsIT_Capston_Design/tree/main/Project) | Unity 프로젝트 폴더
 
 # 아키텍쳐
 ![image](https://user-images.githubusercontent.com/70702088/132844749-babb0e86-f55d-44a4-b17b-a5f45d1ba783.png)
