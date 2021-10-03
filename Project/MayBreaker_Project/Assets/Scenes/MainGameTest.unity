@@ -476,12 +476,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 356632810}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a75fc06c5d026e94988d2d5c95d5a949, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ecc50c5bae2af04cb7cbf57850db96f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 433959811}
   offsetX: 0
-  offsetY: 4.3
+  offsetY: 4.5
   offsetZ: -4.7
   followSpeed: 4.2
 --- !u!1 &375972880
@@ -661,6 +661,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25d7e6a8a7b85a149a09459ec41ae9a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  im: {fileID: 0}
+  moveSpeed: 5
+  rotSpeed: 10
+  jumpPower: 10
 --- !u!136 &433959813
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1162,7 +1166,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 870535054}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a75fc06c5d026e94988d2d5c95d5a949, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ecc50c5bae2af04cb7cbf57850db96f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2091113582}
@@ -1978,6 +1982,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25d7e6a8a7b85a149a09459ec41ae9a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  im: {fileID: 2091113589}
+  moveSpeed: 5
+  rotSpeed: 10
+  jumpPower: 10
 --- !u!54 &2091113587
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2008,3 +2016,20 @@ CapsuleCollider:
   m_Height: 1.31568
   m_Direction: 1
   m_Center: {x: 0, y: 0.5961945, z: 0}
+--- !u!114 &2091113589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091113582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95931d8d0c715fb428cfb0304ac05f83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  h: 0
+  v: 0
+  keyCatchOrRelease: 0
+  keyPause: 0
+  keyJump: 0
