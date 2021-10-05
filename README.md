@@ -1,7 +1,6 @@
 # 개요
-## (가제)메이브레이커 프로젝트
-
-# 팀 Blue Bird
+## Rule Mate Project
+## Team Blue Bird
 ### 팀원 및 역할
 이름 | 역할 | GitHub
 ---|-----|---
