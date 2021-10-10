@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player01 : PlayerManager
+public class Player02 : PlayerManager
 {
     void Start()
     {
-        playerPrefab = GameObject.Find("TestPlayer1");
         rigid = playerPrefab.GetComponent<Rigidbody>();
         anim = playerPrefab.GetComponent<Animator>();
     }
@@ -14,11 +13,13 @@ public class Player01 : PlayerManager
     void Update()
     {
         Jump();
-
         SetAnim();
 
         if (im.keyCatchOrRelease)
+        {
+            //photonView.RPC("CatchOrRelease", RpcTarget.All);
             CatchOrRelease();
+        }
     }
 
     void FixedUpdate()

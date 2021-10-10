@@ -11,7 +11,7 @@ public class InputManager : MonoBehaviour
     public bool keyPause;
     public bool keyJump;
 
-    void Update()
+    virtual protected void Update()
     {
         h = Input.GetAxisRaw("Horizontal");
         v = Input.GetAxisRaw("Vertical");
