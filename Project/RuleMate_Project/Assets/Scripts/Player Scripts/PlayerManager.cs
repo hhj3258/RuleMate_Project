@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public abstract class PlayerManager : MonoBehaviour
+public abstract class PlayerManager : MonoBehaviourPun
 {
-    protected GameObject playerPrefab;
+    [SerializeField] protected GameObject playerPrefab;
     protected Animator anim;
 
     protected Rigidbody rigid;
@@ -14,7 +15,7 @@ public abstract class PlayerManager : MonoBehaviour
 
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float rotSpeed = 10f;
-    [SerializeField] float jumpPower = 10f;
+    [SerializeField] float jumpPower = 5f;
 
     bool isJumping = false; // 점프 가능 여부
 
@@ -50,6 +51,7 @@ public abstract class PlayerManager : MonoBehaviour
     }
 
     // 물체 잡기, 놓기 시 오브젝트 세팅
+
     void ObjSetting(bool setBool)
     {
         if (setBool)
@@ -76,8 +78,11 @@ public abstract class PlayerManager : MonoBehaviour
     }
 
     // 잡기 or 놓기
+    [PunRPC]
     protected void CatchOrRelease()
     {
+        FrontRay();
+        Debug.Log("chk");
         if (objCol)
         {
             if (!isPickNow)
@@ -91,24 +96,27 @@ public abstract class PlayerManager : MonoBehaviour
                 // 놓을 시 부모 오브젝트를 null
                 objCol.transform.SetParent(null);
                 ObjSetting(false);
+                // objCol도 비워줌
+                objCol = null;
             }
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    RaycastHit hit;
+    public float rayDistance = 1f;
+    // 플레이어 정면에 Ray를 쏴서 상호작용 가능한 오브젝트가 있는지 판별
+    protected void FrontRay()
     {
-        // 현재 물체를 잡지 않았고 오브젝트 태그가 InterActionObj이면 objCol 세팅
-        if (!isPickNow && other.transform.CompareTag("InterActionObj"))
-        {
-            objCol = other;
-        }
-    }
+        Transform pt = playerPrefab.transform;
+        Debug.DrawRay(pt.position, pt.forward * rayDistance, Color.blue, 0.3f);
 
-    private void OnTriggerExit(Collider other)
-    {
-        // 플레이어가 물체를 잡지 않았을 때만 objCol 비움
-        if (!isPickNow)
-            objCol = null;
+        if (Physics.Raycast(pt.position, transform.forward, out hit, rayDistance))
+        {// 현재 물체를 잡지 않았고 오브젝트 태그가 InterActionObj이면 objCol 세팅
+            if (!isPickNow && hit.transform.CompareTag("InterActionObj"))
+            {
+                objCol = hit.transform.GetComponent<Collider>();
+            }
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
