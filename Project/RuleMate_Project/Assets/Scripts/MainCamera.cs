@@ -15,18 +15,6 @@ public class MainCamera : MonoBehaviour
     //카메라 이동 할 위치
     Vector3 cameraPosition;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void LateUpdate()
     {
         //캐릭터 이동한 만큼 카메라 이동 값 저장
