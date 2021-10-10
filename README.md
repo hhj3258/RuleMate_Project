@@ -1,6 +1,6 @@
-# 개요
-## Rule Mate Project
-## Team Blue Bird
+
+# Rule Mate Project
+## Team BlueBird
 ### 팀원 및 역할
 이름 | 역할 | GitHub
 ---|-----|---
@@ -13,20 +13,21 @@
 유진아 | 디자인
 
 # 주제 및 기대효과
-- ### 프로젝트명
-  
-  1대1 대전형 멀티플레이 캐주얼 게임, (가제)메이브레이커
+- ## 게임명
+  ### Rule Mate
 
-- ### 선정 동기
+- ## 선정 동기
   코로나 19 여파로 인한 온라인 멀티플레이 게임의 수요 증가에 따른 주제선정
 
-- ### 게임 장르
-  2인 경쟁 멀티플레이 / 캐주얼 / PC 게임 / 패키지 게임
+- ## 게임 장르
+  - 1대1 대전형 멀티플레이 캐주얼 게임
+  
+  - 2인 경쟁 멀티플레이 / 캐주얼 / PC 게임 / 패키지 게임
 
-- ### 내용
+- ## 내용
   목표로 하는 게임은 두 명의 플레이어가 함께 살면서 일어나는, 생활 방식의 차이를 경쟁, 대전으로 표현한 게임이다.
   
-- ### 기대효과
+- ## 기대효과
   최근 코로나 19 여파로 인해 언택트 문화가 증가함으로써 온라인으로 친구들과 만남을 즐기는 문화 및 메타버스에 대한 관심 또한 증대하였다. 게임 시장에서도 이러한 배경과 더불어 온라인 멀티플레이 게임의 수요가 많이 늘어났다. 따라서 멀티플레이 게임의 수요가 상당히 높을 것으로 기대되며, 이는 ‘쿠키런, 브롤스타즈’ 등의 경쟁형 게임의 성공적인 흥행 성적을 보면 알 수 있다.
 
 
@@ -36,25 +37,24 @@
 [docs](https://github.com/hhj3258/ContentsIT_Capston_Design/tree/main/docs) | 기술 문서, 기획서, WBS 등의 문서 폴더
 [Project](https://github.com/hhj3258/ContentsIT_Capston_Design/tree/main/Project) | Unity 프로젝트 폴더
 
-# 아키텍쳐
+# Architecture
 ![image](https://user-images.githubusercontent.com/70702088/132844749-babb0e86-f55d-44a4-b17b-a5f45d1ba783.png)
 
 
 # 기획 문서
 
 
-# 사용 툴
-- 게임 엔진: 유니티(Unity) - Ver.2020.3.5f1
-- 언어: C#
-- Photon Unity Networking(PUN)
-- Cinemachine Camera
-
+# 개발 환경
+- Engine : 유니티(Unity) - Ver.2020.3.5f1
+- language : C#
 
 # Plugins
 - DOTween
+- Photon PUN2
+- Log Viewer
 
 
-# 사용 에셋
+# Assets
 
 
 # Commit Rules
