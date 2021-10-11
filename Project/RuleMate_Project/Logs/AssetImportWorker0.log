@@ -2227,3 +2227,944 @@ System memory in use after: 85.3 MB.
 Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1849.
 Total: 12.251200 ms (FindLiveObjects: 0.270600 ms CreateObjectMapping: 0.065600 ms MarkObjects: 1.265000 ms  DeleteObjects: 10.648600 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001354 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.635 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.2 MB.
+System memory in use after: 85.3 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1852.
+Total: 12.453600 ms (FindLiveObjects: 0.317500 ms CreateObjectMapping: 0.094200 ms MarkObjects: 1.493200 ms  DeleteObjects: 10.547500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1163.622659 seconds.
+  path: Assets/Prefabs/BlueTile.prefab
+  artifactKey: Guid(1983ee5cada922f4db173fbc61dcc0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BlueTile.prefab using Guid(1983ee5cada922f4db173fbc61dcc0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ddf13a124bdd5f9f09284283de4f423') in 0.048142 seconds
+  Import took 0.050120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Prefabs/RedTile.prefab
+  artifactKey: Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RedTile.prefab using Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ac5e4bcc70336b2755baf92ceb9d0a') in 0.012192 seconds
+  Import took 0.014097 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001199 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.667 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.1 MB.
+System memory in use after: 85.3 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1856.
+Total: 11.719100 ms (FindLiveObjects: 0.236400 ms CreateObjectMapping: 0.067200 ms MarkObjects: 1.238400 ms  DeleteObjects: 10.176000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001331 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.641 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 85.3 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1859.
+Total: 12.505200 ms (FindLiveObjects: 0.200800 ms CreateObjectMapping: 0.046800 ms MarkObjects: 1.358800 ms  DeleteObjects: 10.897900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.118119 seconds.
+  path: Assets/Prefabs/New Animation 1.anim
+  artifactKey: Guid(479bcb3504d192a4ca33f48646385562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/New Animation 1.anim using Guid(479bcb3504d192a4ca33f48646385562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42cce583cb0cbdb1537f9b995bc397b3') in 0.014699 seconds
+  Import took 0.016740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 79.199545 seconds.
+  path: Assets/Prefabs/RedtoBlue.anim
+  artifactKey: Guid(479bcb3504d192a4ca33f48646385562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RedtoBlue.anim using Guid(479bcb3504d192a4ca33f48646385562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e63c3c99a6b6e9ec41ce8b3d257391b') in 0.007053 seconds
+  Import took 0.008926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.181438 seconds.
+  path: Assets/Prefabs/BluetoRed.anim
+  artifactKey: Guid(c716aae1582605b4e9106e8dd6a0f01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BluetoRed.anim using Guid(c716aae1582605b4e9106e8dd6a0f01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48c27775626dd08d5d98bf84fcc5d642') in 0.007733 seconds
+  Import took 0.009576 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.451552 seconds.
+  path: Assets/Prefabs/RedTile.prefab
+  artifactKey: Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RedTile.prefab using Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (RedTile) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+The Animator Controller (RedTile) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: '7d2f038bb968c089e305842ec956d975') in 0.043242 seconds
+  Import took 0.045089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.482430 seconds.
+  path: Assets/Prefabs/RedTile.prefab
+  artifactKey: Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RedTile.prefab using Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (RedTile) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+The Animator Controller (RedTile) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: '458a30c26c8268da1731c944224869f3') in 0.010214 seconds
+  Import took 0.012353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.408458 seconds.
+  path: Assets/Prefabs/RedTile.prefab
+  artifactKey: Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RedTile.prefab using Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (RedTile) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+The Animator Controller (RedTile) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: 'a76d9c5ecdafc22172ed35db40e35c22') in 0.010229 seconds
+  Import took 0.012225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.654094 seconds.
+  path: Assets/Prefabs/RedTile.prefab
+  artifactKey: Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RedTile.prefab using Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (RedTile) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+The Animator Controller (RedTile) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: '761df890e66f5541beb5f176d8f59a97') in 0.010227 seconds
+  Import took 0.012164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.667943 seconds.
+  path: Assets/Prefabs/BlueTile.prefab
+  artifactKey: Guid(1983ee5cada922f4db173fbc61dcc0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BlueTile.prefab using Guid(1983ee5cada922f4db173fbc61dcc0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09e871cf055bec50a7ae8c6e6e3a8902') in 0.008112 seconds
+  Import took 0.010045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Prefabs/RedTile.prefab
+  artifactKey: Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RedTile.prefab using Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (RedTile) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+The Animator Controller (RedTile) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: '62cc779ca8783541ea7cfe96a671f3e7') in 0.009820 seconds
+  Import took 0.011665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.223340 seconds.
+  path: Assets/Prefabs/BlueTile.prefab
+  artifactKey: Guid(1983ee5cada922f4db173fbc61dcc0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BlueTile.prefab using Guid(1983ee5cada922f4db173fbc61dcc0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9066bac3fb83d22e5fa33bd30e2e6a40') in 0.008436 seconds
+  Import took 0.010283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Prefabs/RedTile.prefab
+  artifactKey: Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RedTile.prefab using Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (RedTile) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+The Animator Controller (RedTile) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: 'cfd605e85b7550ed3bbadf84fd850a35') in 0.008380 seconds
+  Import took 0.010471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.716746 seconds.
+  path: Assets/Prefabs/BlueTile.prefab
+  artifactKey: Guid(1983ee5cada922f4db173fbc61dcc0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BlueTile.prefab using Guid(1983ee5cada922f4db173fbc61dcc0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2488209a2e64ad1ad87e10b778ef51e') in 0.009049 seconds
+  Import took 0.010886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Prefabs/RedTile.prefab
+  artifactKey: Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RedTile.prefab using Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (RedTile) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+The Animator Controller (RedTile) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: 'e4ffa79dcadc577880f081681b29d52c') in 0.008531 seconds
+  Import took 0.010398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.185537 seconds.
+  path: Assets/Prefabs/BlueTile.prefab
+  artifactKey: Guid(1983ee5cada922f4db173fbc61dcc0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BlueTile.prefab using Guid(1983ee5cada922f4db173fbc61dcc0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e316119d2d441b3fdec4e7c3cf08b4de') in 0.010468 seconds
+  Import took 0.013266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Prefabs/RedTile.prefab
+  artifactKey: Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RedTile.prefab using Guid(1ad6766c12df39948831ef4d3d1f3d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (RedTile) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+The Animator Controller (RedTile) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: '555337038f41c606b8eebf7a60f17bca') in 0.013107 seconds
+  Import took 0.015738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.806049 seconds.
+  path: Assets/Prefabs/RedTile.controller
+  artifactKey: Guid(c73217fc92f9ee7468c31880ab75e870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RedTile.controller using Guid(c73217fc92f9ee7468c31880ab75e870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '585b8ee3804584fbbae046318fbd8ce7') in 0.002309 seconds
+  Import took 0.004101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000485 seconds.
+  path: Assets/Prefabs/RedTile.controller
+  artifactKey: Guid(c73217fc92f9ee7468c31880ab75e870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RedTile.controller using Guid(c73217fc92f9ee7468c31880ab75e870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '585b8ee3804584fbbae046318fbd8ce7') in 0.002280 seconds
+  Import took 0.004325 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001270 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.643 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.1 MB.
+System memory in use after: 85.3 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1863.
+Total: 12.513300 ms (FindLiveObjects: 0.184900 ms CreateObjectMapping: 0.041600 ms MarkObjects: 1.349200 ms  DeleteObjects: 10.936300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001607 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.728 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.1 MB.
+System memory in use after: 85.3 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1866.
+Total: 14.018600 ms (FindLiveObjects: 0.245400 ms CreateObjectMapping: 0.079100 ms MarkObjects: 2.006400 ms  DeleteObjects: 11.686400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001227 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.670 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 85.3 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1869.
+Total: 11.960700 ms (FindLiveObjects: 0.207700 ms CreateObjectMapping: 0.051100 ms MarkObjects: 1.311100 ms  DeleteObjects: 10.388300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 333.532695 seconds.
+  path: Assets/Prefabs/BluetoRed.anim
+  artifactKey: Guid(c716aae1582605b4e9106e8dd6a0f01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BluetoRed.anim using Guid(c716aae1582605b4e9106e8dd6a0f01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32aa9c0f2f44d395a6046094b0848630') in 0.011227 seconds
+  Import took 0.013118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006494 seconds.
+  path: Assets/Prefabs/BluetoRed.anim
+  artifactKey: Guid(c716aae1582605b4e9106e8dd6a0f01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BluetoRed.anim using Guid(c716aae1582605b4e9106e8dd6a0f01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32aa9c0f2f44d395a6046094b0848630') in 0.003090 seconds
+  Import took 0.005241 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001317 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.643 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.2 MB.
+System memory in use after: 85.3 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1872.
+Total: 11.489100 ms (FindLiveObjects: 0.170500 ms CreateObjectMapping: 0.037800 ms MarkObjects: 1.259700 ms  DeleteObjects: 10.019600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001293 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.639 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.4 MB.
+System memory in use after: 85.3 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1875.
+Total: 12.377200 ms (FindLiveObjects: 0.186300 ms CreateObjectMapping: 0.047600 ms MarkObjects: 1.406700 ms  DeleteObjects: 10.735700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001214 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.654 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 85.3 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1878.
+Total: 11.300700 ms (FindLiveObjects: 0.168300 ms CreateObjectMapping: 0.038200 ms MarkObjects: 1.231600 ms  DeleteObjects: 9.861800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001612 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.635 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 85.3 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1881.
+Total: 12.345100 ms (FindLiveObjects: 0.465600 ms CreateObjectMapping: 0.121700 ms MarkObjects: 1.412300 ms  DeleteObjects: 10.343100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001291 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.661 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.1 MB.
+System memory in use after: 85.3 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1884.
+Total: 12.006400 ms (FindLiveObjects: 0.170300 ms CreateObjectMapping: 0.038800 ms MarkObjects: 1.388700 ms  DeleteObjects: 10.407300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001234 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.652 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 85.3 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1887.
+Total: 11.837600 ms (FindLiveObjects: 0.186300 ms CreateObjectMapping: 0.044400 ms MarkObjects: 1.301100 ms  DeleteObjects: 10.304400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001347 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.623 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.2 MB.
+System memory in use after: 85.3 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1890.
+Total: 11.961300 ms (FindLiveObjects: 0.171800 ms CreateObjectMapping: 0.039300 ms MarkObjects: 1.551100 ms  DeleteObjects: 10.198000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001281 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.643 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 85.4 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1893.
+Total: 13.104900 ms (FindLiveObjects: 0.197900 ms CreateObjectMapping: 0.048000 ms MarkObjects: 1.543300 ms  DeleteObjects: 11.314800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001300 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.643 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 85.4 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1896.
+Total: 11.869700 ms (FindLiveObjects: 0.199100 ms CreateObjectMapping: 0.050400 ms MarkObjects: 1.289400 ms  DeleteObjects: 10.329800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001253 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.654 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 85.4 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1899.
+Total: 12.230200 ms (FindLiveObjects: 0.199600 ms CreateObjectMapping: 0.045400 ms MarkObjects: 1.498500 ms  DeleteObjects: 10.485800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001201 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.665 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 85.4 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1902.
+Total: 12.092700 ms (FindLiveObjects: 0.195300 ms CreateObjectMapping: 0.046200 ms MarkObjects: 1.327100 ms  DeleteObjects: 10.523000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001249 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.638 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.4 MB.
+System memory in use after: 85.4 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1905.
+Total: 12.395000 ms (FindLiveObjects: 0.187900 ms CreateObjectMapping: 0.045100 ms MarkObjects: 1.315500 ms  DeleteObjects: 10.845600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001202 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.654 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.5 MB.
+System memory in use after: 85.4 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1908.
+Total: 11.897200 ms (FindLiveObjects: 0.188000 ms CreateObjectMapping: 0.038900 ms MarkObjects: 1.316900 ms  DeleteObjects: 10.352100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001530 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.649 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.4 MB.
+System memory in use after: 85.4 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1911.
+Total: 13.001600 ms (FindLiveObjects: 0.244300 ms CreateObjectMapping: 0.065200 ms MarkObjects: 1.625700 ms  DeleteObjects: 11.065100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001311 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.644 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 85.4 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1914.
+Total: 12.535500 ms (FindLiveObjects: 0.303000 ms CreateObjectMapping: 0.056100 ms MarkObjects: 1.471700 ms  DeleteObjects: 10.703300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001239 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.659 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 85.4 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1917.
+Total: 12.673200 ms (FindLiveObjects: 0.201300 ms CreateObjectMapping: 0.044700 ms MarkObjects: 1.327300 ms  DeleteObjects: 11.098700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001282 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.625 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 85.4 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1920.
+Total: 11.730100 ms (FindLiveObjects: 0.201400 ms CreateObjectMapping: 0.048300 ms MarkObjects: 1.287100 ms  DeleteObjects: 10.191900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1080.672936 seconds.
+  path: Assets/Materials/m_Red 1.mat
+  artifactKey: Guid(9cf27005108d06f408a6632526aabae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/m_Red 1.mat using Guid(9cf27005108d06f408a6632526aabae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13eb4a82fee99da6090832689cc21808') in 0.057838 seconds
+  Import took 0.059861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.882048 seconds.
+  path: Assets/Resources/DOTweenSettings.asset
+  artifactKey: Guid(da9eedeece7603546b7fae7a8a118280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/DOTweenSettings.asset using Guid(da9eedeece7603546b7fae7a8a118280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a50083134029d38a46c8d7fab63283b0') in 0.006629 seconds
+  Import took 0.008648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.730603 seconds.
+  path: Assets/Prefabs/RedTile.controller
+  artifactKey: Guid(c73217fc92f9ee7468c31880ab75e870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RedTile.controller using Guid(c73217fc92f9ee7468c31880ab75e870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a3478b8cf5d25b2147689e0d4641b43') in 0.005843 seconds
+  Import took 0.007615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009187 seconds.
+  path: Assets/Prefabs/RedTile.controller
+  artifactKey: Guid(c73217fc92f9ee7468c31880ab75e870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/RedTile.controller using Guid(c73217fc92f9ee7468c31880ab75e870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a3478b8cf5d25b2147689e0d4641b43') in 0.002222 seconds
+  Import took 0.004005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.248196 seconds.
+  path: Assets/Animations/Flip.anim
+  artifactKey: Guid(05021cee16c06b343a850fad915cb7d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Flip.anim using Guid(05021cee16c06b343a850fad915cb7d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ced2ec9e7443e8c6b8f70c1903f210') in 0.005557 seconds
+  Import took 0.007514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009711 seconds.
+  path: Assets/Animations/Flip.anim
+  artifactKey: Guid(05021cee16c06b343a850fad915cb7d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Flip.anim using Guid(05021cee16c06b343a850fad915cb7d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ced2ec9e7443e8c6b8f70c1903f210') in 0.002428 seconds
+  Import took 0.004205 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.726520 seconds.
+  path: Assets/Animations/animTestPlayer.controller
+  artifactKey: Guid(e90389c030588964eaa4dbc827e00520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/animTestPlayer.controller using Guid(e90389c030588964eaa4dbc827e00520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dc46e39ed7371b33dc86533d36c099b') in 0.028126 seconds
+  Import took 0.030223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.941715 seconds.
+  path: Assets/Animations/BluetoRed.anim
+  artifactKey: Guid(c716aae1582605b4e9106e8dd6a0f01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/BluetoRed.anim using Guid(c716aae1582605b4e9106e8dd6a0f01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1209ecc1a8df400dc3ca480444790eae') in 0.003621 seconds
+  Import took 0.005706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003206 seconds.
+  path: Assets/Animations/BluetoRed.anim
+  artifactKey: Guid(c716aae1582605b4e9106e8dd6a0f01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/BluetoRed.anim using Guid(c716aae1582605b4e9106e8dd6a0f01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1209ecc1a8df400dc3ca480444790eae') in 0.002974 seconds
+  Import took 0.004763 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001301 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.652 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.4 MB.
+System memory in use after: 85.6 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1957.
+Total: 12.412500 ms (FindLiveObjects: 0.180600 ms CreateObjectMapping: 0.041000 ms MarkObjects: 1.358600 ms  DeleteObjects: 10.831400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001263 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.634 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.6 MB.
+System memory in use after: 85.7 MB.
+
+Unloading 66 unused Assets to reduce memory usage. Loaded Objects now: 1960.
+Total: 12.054700 ms (FindLiveObjects: 0.241500 ms CreateObjectMapping: 0.063400 ms MarkObjects: 1.311900 ms  DeleteObjects: 10.436200 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
