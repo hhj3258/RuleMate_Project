@@ -22,20 +22,20 @@ public class Tile : MonoBehaviour
         
     }
 
-    //ë§ëŠ” íƒ€ì¼ì¸ì§€ í™•ì¸
+    //¸Â´Â Å¸ÀÏÀÎÁö È®ÀÎ
     protected void CheckObj(string name)
     {
-        Debug.Log("ì²´í¬" + name +" / " + cname + " / " );
+        Debug.Log("Ã¼Å©" + name +" / " + cname + " / " );
         if (true)
         {
             Flip();
         }
     }
 
-    //ë’¤ì§‘ëŠ” ì• ë‹ˆë©”ì´ì…˜ í”Œë ˆì´
+    //µÚÁı´Â ¾Ö´Ï¸ŞÀÌ¼Ç ÇÃ·¹ÀÌ
     protected void Flip()
     {
-        Debug.Log("íšŒì „");
+        Debug.Log("È¸Àü");
         ani.Play();
     }
 }

@@ -6,7 +6,6 @@ TagManager:
   tags:
   - InterActionObj
   - Ground
-  - Tile
   layers:
   - Default
   - TransparentFX
