@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class InputManager : MonoBehaviour
 {
-    public float h; // A || D
-    public float v; // W || S
-    public bool keyCatchOrRelease; // 잡기 || 놓기
-    public bool keyPause;
-    public bool keyJump;
+    [HideInInspector] public float h; // A || D
+    [HideInInspector] public float v; // W || S
+    [HideInInspector] public bool keyCatchOrRelease; // 잡기 || 놓기
+    [HideInInspector] public bool keyPause;
+    [HideInInspector] public bool keyJump;
 
     virtual protected void Update()
     {

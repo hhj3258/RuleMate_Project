@@ -82,7 +82,7 @@ public abstract class PlayerManager : MonoBehaviourPun
     protected void CatchOrRelease()
     {
         FrontRay();
-        Debug.Log("chk");
+        //Debug.Log("chk");
         if (objCol)
         {
             if (!isPickNow)

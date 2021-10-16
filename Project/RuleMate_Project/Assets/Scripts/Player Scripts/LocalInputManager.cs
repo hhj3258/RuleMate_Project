@@ -10,7 +10,7 @@ public class LocalInputManager : InputManager
         h = Input.GetAxisRaw("Horizontal2");
         v = Input.GetAxisRaw("Vertical2");
 
-        keyCatchOrRelease = Input.GetKeyDown(KeyCode.RightControl);
+        keyCatchOrRelease = Input.GetKeyDown(KeyCode.Period);
         keyJump = Input.GetKeyDown(KeyCode.RightShift);
     }
 }
