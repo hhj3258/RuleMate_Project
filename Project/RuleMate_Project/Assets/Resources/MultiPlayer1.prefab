@@ -2777,7 +2777,7 @@ GameObject:
   - component: {fileID: 6292054055313594940}
   - component: {fileID: 6026760987028054178}
   m_Layer: 0
-  m_Name: TestPlayer2
+  m_Name: MultiPlayer1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2922,8 +2922,11 @@ MonoBehaviour:
   ShowParameterInspector: 1
   m_SynchronizeParameters:
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 2
     Name: isMove
+  - Type: 4
+    SynchronizeType: 2
+    Name: isSelected
   m_SynchronizeLayers:
   - SynchronizeType: 2
     LayerIndex: 0
