@@ -1,0 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Wall : MonoBehaviour
+{
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        Material Mat = this.transform.GetComponentInChildren<Renderer>().material;
+        Color matColor = Mat.color;
+        matColor.a = 1f;
+        Mat.color = matColor;
+    }
+}
