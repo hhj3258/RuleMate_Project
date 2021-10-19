@@ -20,12 +20,12 @@ public class InputManager : MonoBehaviour
         keyPause = Input.GetKeyDown(KeyCode.Escape);
         keyJump = Input.GetKeyDown(KeyCode.Space);
 
-        ////////////// 임시 키 ////////////////////
+#if UNITY_EDITOR
         // 현재 씬 재시작
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-        ///////////////////////////////////////////
+#endif
     }
 }
