@@ -1075,7 +1075,10 @@ MonoBehaviour:
   spawnPositions:
   - {fileID: 527127792}
   - {fileID: 2084658520}
-  playerPrefab: {fileID: 4096304492409806904, guid: f488506717c758f44b6b1f6b4fb21bda, type: 3}
+  playerPrefab: {fileID: 0}
+  playerPrefabs:
+  - {fileID: 4096304492409806904, guid: f488506717c758f44b6b1f6b4fb21bda, type: 3}
+  - {fileID: 40680727544353218, guid: 02428a6d9aaed5c4fb072b2d11489f6b, type: 3}
 --- !u!4 &813200240
 Transform:
   m_ObjectHideFlags: 0
