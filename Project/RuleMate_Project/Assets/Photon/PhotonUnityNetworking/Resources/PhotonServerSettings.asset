@@ -44,6 +44,17 @@ MonoBehaviour:
   - ParentSetting
   - MakeParent
   - FrontRay
+  - OnClickGameStart
+  - MultiLoad
+  - OnDeSelect
+  - OnSelect
+  - NetWorkColSwitch
+  - IsSelect
+  - ChatRPC
+  - OnClickReady
+  - NetworkColSwitch
+  - rpcTest1
+  - LoadLevel
   DisableAutoOpenWizard: 1
-  ShowSettings: 0
+  ShowSettings: 1
   DevRegionSetOnce: 1
