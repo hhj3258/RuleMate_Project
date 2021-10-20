@@ -240,7 +240,7 @@ public class NetWorkMenuManager : MonoBehaviourPunCallbacks
 
     public void LoadGameScene()
     {
-        PhotonNetwork.LoadLevel("MultiMainGameTest");
+        PhotonNetwork.LoadLevel("MultiMainGameTest 1");
     }
 
     #endregion

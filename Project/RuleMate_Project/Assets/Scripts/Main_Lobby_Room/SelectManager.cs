@@ -23,4 +23,7 @@ public class SelectManager : MonoBehaviour
 
     // 현재 내가 선택한 캐릭터의 열거형 변수를 넘겨줄 것
     public Character currentCharacter;
+
+    public Character localPlayer1;
+    public Character localPlayer2;
 }
