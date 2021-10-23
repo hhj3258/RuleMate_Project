@@ -795,6 +795,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2517952826243698547, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -81
+      objectReference: {fileID: 0}
+    - target: {fileID: 2517952826243698547, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 714
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907770814574900481, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907770814574900481, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 306
+      objectReference: {fileID: 0}
     - target: {fileID: 7907770814574900483, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -818,6 +834,22 @@ PrefabInstance:
     - target: {fileID: 7907770814796416884, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907770814837274438, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907770814837274438, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907770815235956254, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -677
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907770815235956254, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -36
       objectReference: {fileID: 0}
     - target: {fileID: 7907770815319446128, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
       propertyPath: m_Text

@@ -31,10 +31,13 @@ public class TalkScript : TalkEvent
                 Talk(1, "2 : 브레이 말하는중1");
                 break;
             case 2:
-                Talk(1, "3 : 브레이 말하는중2");
+                Talk(0, "3 : 메이 말하는중2");
                 break;
             case 3:
-                Talk(0, "4 : 메이 말하는중2");
+                Talk(1, "4 : 브레이 말하는중2");
+                break;
+            case 4:
+                Talk(0, "끝");
                 break;
         }
     }
