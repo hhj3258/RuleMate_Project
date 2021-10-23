@@ -4,18 +4,38 @@ using UnityEngine;
 
 public class TalkScript : TalkEvent
 {
-    Dictionary<int, string[]> talkData;
+    int n = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
-        talkData = new Dictionary<int, string[]>();
-        GenerateData();
+
     }
 
-    // Update is called once per frame
-    void GenerateData()
+    void Update()
     {
-        talkData.Add(1000, new string[] { });
+        if (Input.GetMouseButtonDown(0))
+        {
+            TalkSelect(n);
+            n++;
+        }
+    }
+
+    void TalkSelect(int n)
+    {
+        switch (n)
+        {
+            case 0:
+                Talk(0, "1 : 메이 말하는중1");
+                break;
+            case 1:
+                Talk(1, "2 : 브레이 말하는중1");
+                break;
+            case 2:
+                Talk(1, "3 : 브레이 말하는중2");
+                break;
+            case 3:
+                Talk(0, "4 : 메이 말하는중2");
+                break;
+        }
     }
 }
