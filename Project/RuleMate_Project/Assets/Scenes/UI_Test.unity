@@ -277,6 +277,30 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7907770814574900480, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
   m_PrefabInstance: {fileID: 7907770814917569744}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &979979604 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7907770814410837757, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
+  m_PrefabInstance: {fileID: 7907770814917569744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &979979608
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979979604}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: af27cda8f1134fc419ef242e80023738, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1298363493 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7907770816073275573, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
@@ -508,8 +532,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   May_Message: {fileID: 5714957329798964128}
   Brey_Message: {fileID: 732748240}
+  May_NextIcon: {fileID: 2134372804}
+  Brey_NextIcon: {fileID: 979979604}
   May_Text: {fileID: 1298363493}
   Brey_Text: {fileID: 2014183072}
+--- !u!1 &2134372804 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2517952825656019786, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
+  m_PrefabInstance: {fileID: 7907770814917569744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2134372808
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134372804}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: af27cda8f1134fc419ef242e80023738, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2046968440292137540
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -632,6 +682,10 @@ PrefabInstance:
     - target: {fileID: 2517952825613055346, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2517952825656019789, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.100006
       objectReference: {fileID: 0}
     - target: {fileID: 2517952825753604076, guid: 6e3f2bdbf26c93c41bb21f4ccfdc23f0, type: 3}
       propertyPath: m_Name

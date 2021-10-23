@@ -8,6 +8,9 @@ public class TalkEvent : MonoBehaviour
     public GameObject May_Message;
     public GameObject Brey_Message;
 
+    public GameObject May_NextIcon;
+    public GameObject Brey_NextIcon;
+
     public Text May_Text;
     public Text Brey_Text;
 
@@ -35,6 +38,10 @@ public class TalkEvent : MonoBehaviour
 
         May_Message.transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
         Brey_Message.transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
+
+        May_NextIcon.SetActive(true);
+        Brey_NextIcon.SetActive(false);
+
         May_Text.text = txt;
     }
 
@@ -46,6 +53,10 @@ public class TalkEvent : MonoBehaviour
 
         May_Message.transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
         Brey_Message.transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
+
+        May_NextIcon.SetActive(false);
+        Brey_NextIcon.SetActive(true);
+
         Brey_Text.text = txt;
     }
 
