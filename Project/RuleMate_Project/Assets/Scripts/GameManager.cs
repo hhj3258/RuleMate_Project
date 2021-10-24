@@ -45,6 +45,6 @@ public class GameManager : MonoBehaviourPunCallbacks
     // 나 자신이 방에서 떠났을 때 자동 실행
     public override void OnLeftRoom()
     {
-        SceneManager.LoadScene("Lobby");
+        SceneManager.LoadScene("Main_Lobby_Room");
     }
 }
