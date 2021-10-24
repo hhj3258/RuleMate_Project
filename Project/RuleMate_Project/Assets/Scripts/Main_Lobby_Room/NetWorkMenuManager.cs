@@ -212,8 +212,8 @@ public class NetWorkMenuManager : MonoBehaviourPunCallbacks
         RoomPanel.SetActive(true);
         RoomRenewal();
 
-        //ChatInput.text = "";
-        //for (int i = 0; i < ChatText.Length; i++) ChatText[i].text = "";
+        ChatInput.text = "";
+        for (int i = 0; i < ChatText.Length; i++) ChatText[i].text = "";
     }
 
     // 룸 초기화
@@ -229,45 +229,45 @@ public class NetWorkMenuManager : MonoBehaviourPunCallbacks
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         RoomRenewal();
-        //ChatRPC("<color=yellow>" + newPlayer.NickName + "님이 참가하셨습니다</color>");
+        ChatRPC("<color=yellow>" + newPlayer.NickName + "님이 참가하셨습니다</color>");
     }
 
     public override void OnPlayerLeftRoom(Player otherPlayer)
     {
         RoomRenewal();
-        //ChatRPC("<color=yellow>" + otherPlayer.NickName + "님이 퇴장하셨습니다</color>");
+        ChatRPC("<color=yellow>" + otherPlayer.NickName + "님이 퇴장하셨습니다</color>");
     }
 
     public void LoadGameScene()
     {
-        PhotonNetwork.LoadLevel("MultiMainGameTest 1");
+        MultiLoadingSceneController.LoadScene("MultiMainGameTest 1");
     }
 
     #endregion
 
     #region 채팅
-    //public void Send()
-    //{
-    //    PV.RPC("ChatRPC", RpcTarget.All, PhotonNetwork.NickName + " : " + ChatInput.text);
-    //    ChatInput.text = "";
-    //}
+    public void Send()
+    {
+        PV.RPC("ChatRPC", RpcTarget.All, PhotonNetwork.NickName + " : " + ChatInput.text);
+        ChatInput.text = "";
+    }
 
-    //[PunRPC]
-    //void ChatRPC(string msg)
-    //{
-    //    bool isInput = false;
-    //    for (int i = 0; i < ChatText.Length; i++)
-    //        if (ChatText[i].text == "")
-    //        {
-    //            isInput = true;
-    //            ChatText[i].text = msg;
-    //            break;
-    //        }
-    //    if (!isInput) // 꽉차면 한칸씩 위로 올림
-    //    {
-    //        for (int i = 1; i < ChatText.Length; i++) ChatText[i - 1].text = ChatText[i].text;
-    //        ChatText[ChatText.Length - 1].text = msg;
-    //    }
-    //}
+    [PunRPC]
+    void ChatRPC(string msg)
+    {
+        bool isInput = false;
+        for (int i = 0; i < ChatText.Length; i++)
+            if (ChatText[i].text == "")
+            {
+                isInput = true;
+                ChatText[i].text = msg;
+                break;
+            }
+        if (!isInput) // 꽉차면 한칸씩 위로 올림
+        {
+            for (int i = 1; i < ChatText.Length; i++) ChatText[i - 1].text = ChatText[i].text;
+            ChatText[ChatText.Length - 1].text = msg;
+        }
+    }
     #endregion
 }
