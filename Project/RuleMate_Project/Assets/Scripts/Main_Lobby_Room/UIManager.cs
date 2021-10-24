@@ -15,6 +15,11 @@ public class UIManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI txtMayPlayer;
     [SerializeField] TextMeshProUGUI txtBreayPlayer;
 
+    public void LoadSceneWithLoading(string sceneName)
+    {
+        LoadingSceneController.LoadingInstance.LoadScene(sceneName);
+    }
+
     #region 로컬메뉴
     public void OnClickSingle()
     {
@@ -27,7 +32,8 @@ public class UIManager : MonoBehaviour
 
     public void OnClickLocalGameStart()
     {
-        SceneManager.LoadScene("Map_Test");
+        //SceneManager.LoadScene("Map_Test");
+        LoadSceneWithLoading("Map_Test");
     }
 
     public void OnClickLocalMainMenu()
@@ -77,7 +83,7 @@ public class UIManager : MonoBehaviour
 
     public void OnClickJoinRoom() => NetMgr.JoinRandomRoom();
 
-    public void OnClickMainMenu() => NetMgr.Disconnect();
+    public virtual void OnClickMainMenu() => NetMgr.Disconnect();
 
     public void OnClickRoomList(int num) => NetMgr.MyListClick(num);
     #endregion
@@ -88,4 +94,9 @@ public class UIManager : MonoBehaviour
     public void OnClickLobby() => NetMgr.LeaveRoom();
 
     #endregion
+
+    public void Test()
+    {
+        NetMgr.LoadGameScene();
+    }
 }
