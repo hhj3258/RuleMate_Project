@@ -9924,6 +9924,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: {fileID: 5863627475011595247}
   effect: {fileID: 5731350131832859694}
+  control: {fileID: 8402086473177252622}
+  resolution: {fileID: 4054226758851500562}
 --- !u!1 &1011203901
 GameObject:
   m_ObjectHideFlags: 0
