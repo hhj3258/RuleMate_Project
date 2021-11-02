@@ -36,7 +36,7 @@ public class MultiLoadingSceneController : MonoBehaviour
         {
             yield return null;
 
-            Debug.Log(PhotonNetwork.LevelLoadingProgress);
+            //Debug.Log(PhotonNetwork.LevelLoadingProgress);
 
             if (PhotonNetwork.LevelLoadingProgress < 0.9f)
             {
