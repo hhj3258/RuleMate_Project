@@ -4,10 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using DG.Tweening;
 
 public class UIManager : MonoBehaviour
 {
     [SerializeField] NetWorkMenuManager NetMgr;
+
+    [SerializeField] GameObject TitlePanel;
+
+    [Header("Option")]
+    [SerializeField] protected GameObject OptionPanel;
 
     [Header("Local")]
     [SerializeField] GameObject MainMenuPanel;
@@ -19,6 +25,36 @@ public class UIManager : MonoBehaviour
     {
         LoadingSceneController.LoadingInstance.LoadScene(sceneName);
     }
+
+    public void OnClickOption()
+    {
+        OptionPanel.SetActive(true);
+    }
+
+    public void OnClickOptionClose()
+    {
+        OptionPanel.SetActive(false);
+    }
+
+    #region 타이틀메뉴
+
+    // 타이틀 화면 클릭 시 페이드 효과
+    public void OnClickScreen()
+    {
+        var imgs = TitlePanel.GetComponentsInChildren<Image>();
+        foreach (var img in imgs)
+            img.DOFade(0f, 1.7f);
+
+        // 텍스트는 따로 처리
+        TitlePanel.GetComponentInChildren<Text>().DOFade(0f, 1.7f);
+
+        // 페이드 효과 후 Active => false
+        Invoke("TitleActive", 1.8f);
+    }
+
+    void TitleActive() => TitlePanel.SetActive(false);
+
+    #endregion
 
     #region 로컬메뉴
     public void OnClickSingle()
@@ -44,7 +80,7 @@ public class UIManager : MonoBehaviour
 
     public void OnClickChangeCharacter()
     {
-        if(SelectManager.instance.localPlayer1 == Character.Player1)
+        if (SelectManager.instance.localPlayer1 == Character.Player1)
         {
             SelectManager.instance.localPlayer1 = Character.Player2;
             SelectManager.instance.localPlayer2 = Character.Player1;
@@ -95,8 +131,4 @@ public class UIManager : MonoBehaviour
 
     #endregion
 
-    public void Test()
-    {
-        NetMgr.LoadGameScene();
-    }
 }

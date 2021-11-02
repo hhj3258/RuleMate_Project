@@ -31,8 +31,6 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
     public void ReadyCheck(Character character)
     {
-        Debug.Log(character);
-
         if (character == Character.Player1)
         {
             if (isSelects[0])

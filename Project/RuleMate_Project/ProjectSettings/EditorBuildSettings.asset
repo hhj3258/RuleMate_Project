@@ -12,13 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/EventScene.unity
     guid: bb90cdc52714f584798e98cb68dff0fd
   - enabled: 1
-    path: Assets/Scenes/MainGame.unity
-    guid: 4c0b86b8504cb5f408979e8ad8623eb2
-  - enabled: 1
-    path: Assets/Scenes/MainGameTest 1.unity
-    guid: 3cfa833b8ae56ac418d6191c10978424
-  - enabled: 1
-    path: Assets/Scenes/MultiMainGameTest/MultiMainGameTest 1.unity
+    path: Assets/Scenes/Multi/MultiMainGameTest 1.unity
     guid: b0b0fbe458b893c4481062d2530aec55
   - enabled: 1
     path: Assets/Scenes/Map_Test.unity

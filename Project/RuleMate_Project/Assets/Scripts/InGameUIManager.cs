@@ -12,6 +12,9 @@ public class InGameUIManager : UIManager
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            if (OptionPanel.activeSelf == true)
+                return;
+
             if (pausePanel.activeSelf)
                 pausePanel.SetActive(false);
             else
@@ -25,11 +28,6 @@ public class InGameUIManager : UIManager
             PhotonNetwork.Disconnect();
 
         LoadSceneWithLoading("Main_Lobby_Room");
-    }
-
-    public void OnClickOptions()
-    {
-
     }
 
     public void OnClickResume()
