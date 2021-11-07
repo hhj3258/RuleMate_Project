@@ -22,6 +22,8 @@ public abstract class PlayerManager : MonoBehaviourPun
     bool isPickNow = false; // 물체 잡았는지 여부
     Collider objCol = null; // 잡은 물체 저장
 
+    public ObjectMonitor objectMonitor;
+
     protected void Move()
     {
         movement = new Vector3(im.h, 0, im.v);
@@ -64,14 +66,11 @@ public abstract class PlayerManager : MonoBehaviourPun
         objCol.GetComponent<Rigidbody>().isKinematic = setBool;
 
         // 콜라이더 활성 유무
-        Collider[] cols = objCol.GetComponents<Collider>();
-        foreach (var col in cols)
-        {
-            if (setBool)
-                col.enabled = false;
-            else
-                col.enabled = true;
-        }
+        Collider col = objCol.GetComponent<Collider>();
+        if (setBool)
+            col.enabled = false;
+        else
+            col.enabled = true;
 
         // 물체를 잡았는지 판단
         isPickNow = isPickNow ? false : true;
@@ -82,7 +81,7 @@ public abstract class PlayerManager : MonoBehaviourPun
     protected void CatchOrRelease()
     {
         FrontRay();
-        //Debug.Log("chk");
+
         if (objCol)
         {
             if (!isPickNow)
@@ -93,11 +92,13 @@ public abstract class PlayerManager : MonoBehaviourPun
             }
             else
             {
+                if(objectMonitor)
+                    objCol.GetComponent<ObjectInitSetting>().ObjCleaning();
+
                 // 놓을 시 부모 오브젝트를 null
-                objCol.transform.SetParent(null);
+                objCol.transform.SetParent(null);   
                 ObjSetting(false);
-                // objCol도 비워줌
-                objCol = null;
+                objCol = null;  // objCol도 비워줌
             }
         }
     }
@@ -111,7 +112,8 @@ public abstract class PlayerManager : MonoBehaviourPun
         Debug.DrawRay(pt.position, pt.forward * rayDistance, Color.blue, 0.3f);
 
         if (Physics.Raycast(pt.position, transform.forward, out hit, rayDistance))
-        {// 현재 물체를 잡지 않았고 오브젝트 태그가 InterActionObj이면 objCol 세팅
+        {
+            // 현재 물체를 잡지 않았고 오브젝트 태그가 InterActionObj이면 objCol 세팅
             if (!isPickNow && hit.transform.CompareTag("InterActionObj"))
             {
                 objCol = hit.transform.GetComponent<Collider>();
