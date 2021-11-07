@@ -2947,6 +2947,7 @@ MonoBehaviour:
   moveSpeed: 5
   rotSpeed: 10
   jumpPower: 5
+  objectMonitor: {fileID: 0}
   rayDistance: 1
 --- !u!1 &4137896654712286741
 GameObject:
