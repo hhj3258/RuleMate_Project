@@ -28,33 +28,21 @@ MonoBehaviour:
     AuthMode: 0
     EnableLobbyStatistics: 0
     NetworkLogging: 1
-  DevRegion: kr
+  DevRegion: 
   PunLogging: 0
   EnableSupportLogger: 0
   RunInBackground: 1
   StartInOfflineMode: 0
   RpcList:
   - CatchOrRelease
+  - ChatRPC
   - ClickRpc
   - DestroyRpc
   - DestroySpaceship
   - Fire
-  - RespawnSpaceship
-  - Test
-  - ParentSetting
-  - MakeParent
-  - FrontRay
-  - OnClickGameStart
-  - MultiLoad
-  - OnDeSelect
-  - OnSelect
-  - NetWorkColSwitch
-  - IsSelect
-  - ChatRPC
-  - OnClickReady
   - NetworkColSwitch
-  - rpcTest1
-  - LoadLevel
+  - OnClickReady
+  - RespawnSpaceship
   DisableAutoOpenWizard: 1
-  ShowSettings: 1
-  DevRegionSetOnce: 1
+  ShowSettings: 0
+  DevRegionSetOnce: 0

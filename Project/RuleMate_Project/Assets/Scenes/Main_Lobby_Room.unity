@@ -3946,6 +3946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NetMgr: {fileID: 1166658377}
   TitlePanel: {fileID: 970527023}
+  txtPressKey: {fileID: 7718548121194553720}
   OptionPanel: {fileID: 1116133730674201381}
   MainMenuPanel: {fileID: 2010200294}
   LocalRoomPanel: {fileID: 364366706}
@@ -9926,7 +9927,6 @@ MonoBehaviour:
   effect: {fileID: 5731350131832859694}
   control: {fileID: 8402086473177252622}
   resolution: {fileID: 4054226758851500562}
-  isWindowed: 1
 --- !u!1 &1011203901
 GameObject:
   m_ObjectHideFlags: 0
@@ -10925,6 +10925,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1732811319}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1133755167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1133755169}
+  - component: {fileID: 1133755168}
+  m_Layer: 0
+  m_Name: test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1133755168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133755167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e217758deef78204198507577e85dfba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1133755169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133755167}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.210711, y: -0.89479256, z: -12.744909}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1139781047
 GameObject:
@@ -37608,6 +37651,7 @@ GameObject:
   - component: {fileID: 7718548121194553721}
   - component: {fileID: 7718548121194553723}
   - component: {fileID: 7718548121194553722}
+  - component: {fileID: 7718548121194553724}
   m_Layer: 5
   m_Name: txtPressAnyButton
   m_TagString: Untagged
@@ -37676,6 +37720,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7718548121194553720}
   m_CullTransparentMesh: 1
+--- !u!95 &7718548121194553724
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7718548121194553720}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 60afa3605cee9f349885db0ba011f2c7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!224 &7718548121454281216
 RectTransform:
   m_ObjectHideFlags: 0

@@ -5,10 +5,11 @@ using UnityEngine;
 public class TalkScript : TalkEvent
 {
     int n = 0;
+    string[] lines;
 
     void Start()
     {
-
+        SetTable();
     }
 
     void Update()
@@ -20,25 +21,29 @@ public class TalkScript : TalkEvent
         }
     }
 
+    public void SetTable()
+    {
+        // Resources 폴더 내의 EventScripts.csv 파일
+        TextAsset text = Resources.Load<TextAsset>("EventScripts");
+        string content = text.text;
+        lines = content.Split('\n');
+    }
+
     void TalkSelect(int n)
     {
-        switch (n)
+        if (n == lines.Length)
         {
-            case 0:
-                Talk(0, "1 : 메이 말하는중1");
-                break;
-            case 1:
-                Talk(1, "2 : 브레이 말하는중1");
-                break;
-            case 2:
-                Talk(0, "3 : 메이 말하는중2");
-                break;
-            case 3:
-                Talk(1, "4 : 브레이 말하는중2");
-                break;
-            case 4:
-                Talk(0, "끝");
-                break;
+            Debug.Log("대화 끝");
+            LoadingSceneController.LoadingInstance.LoadScene("Map_Test");
+            return;
         }
+
+        string[] column = lines[n].Split(',');
+        Talk(column[0], column[1]);
+    }
+
+    public void OnClickSkip()
+    {
+        LoadingSceneController.LoadingInstance.LoadScene("Map_Test");
     }
 }

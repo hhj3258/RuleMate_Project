@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class Timer : MonoBehaviour
 {
+    public UnityEvent eventGameStart;
+
     [SerializeField]
     private float limitTime = 90f;
 
@@ -13,16 +16,24 @@ public class Timer : MonoBehaviour
 
     public Text timer;
 
+    float unscaleTimer;
+    bool isGameStart;
+
     //나중에 쓸꺼
-    //private bool timeOver = false;
+    private bool timeOver = false;
+    InGameUIManager InGameUIManager;
 
-    // Start is called before the first frame update
-    void Start()
+    public bool IsTimeOver
     {
-
+        get { return IsTimeOver; }
     }
 
-    // Update is called once per frame
+    private void Start()
+    {
+        isGameStart = false;
+        InGameUIManager = FindObjectOfType<InGameUIManager>();
+    }
+
     void Update()
     {
         limitTime -= Time.deltaTime;
@@ -31,7 +42,19 @@ public class Timer : MonoBehaviour
 
         timer.text = ((int)minute + " : " + (int)second).ToString();
 
-        //if (limitTime <= 0)
-            //timeOver = true;
+        if (limitTime <= 59f)
+        {
+            timeOver = true;
+            InGameUIManager.OnResult();
+            Time.timeScale = 0;
+        }
+
+        unscaleTimer += Time.unscaledDeltaTime;
+        if (unscaleTimer >= 0.8f && isGameStart == false)
+        {
+            Time.timeScale = 1;
+            eventGameStart.Invoke();
+            isGameStart = true;
+        }
     }
 }
