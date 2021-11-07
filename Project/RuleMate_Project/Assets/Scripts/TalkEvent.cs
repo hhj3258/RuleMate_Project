@@ -60,11 +60,16 @@ public class TalkEvent : MonoBehaviour
         Brey_Text.text = txt;
     }
 
-    protected void Talk(int isMay, string txt)
+    protected void Talk(string who, string txt)
     {
-        if (isMay == 0)
+        if (who == "메이")
             MayTalk(txt);
-        else
+        else if(who == "브레이")
             BreyTalk(txt);
+        else
+        {
+            MayTalk(txt);
+            BreyTalk(txt);
+        }
     }
 }
