@@ -10,7 +10,9 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] NetWorkMenuManager NetMgr;
 
+    [Header("Title")]
     [SerializeField] GameObject TitlePanel;
+    [SerializeField] GameObject txtPressKey;
 
     [Header("Option")]
     [SerializeField] protected GameObject OptionPanel;
@@ -42,14 +44,17 @@ public class UIManager : MonoBehaviour
     public void OnClickScreen()
     {
         var imgs = TitlePanel.GetComponentsInChildren<Image>();
+        // 페이드 효과
         foreach (var img in imgs)
             img.DOFade(0f, 1.7f);
 
+        // 애니메이션 재생 스탑
+        txtPressKey.GetComponent<Animator>().enabled = false;
         // 텍스트는 따로 처리
-        TitlePanel.GetComponentInChildren<Text>().DOFade(0f, 1.7f);
+        txtPressKey.GetComponent<Text>().DOFade(0f, 1.7f);
 
         // 페이드 효과 후 Active => false
-        Invoke("TitleActive", 1.8f);
+        Invoke("TitleActive", 1.7f);
     }
 
     void TitleActive() => TitlePanel.SetActive(false);
@@ -68,8 +73,7 @@ public class UIManager : MonoBehaviour
 
     public void OnClickLocalGameStart()
     {
-        //SceneManager.LoadScene("Map_Test");
-        LoadSceneWithLoading("Map_Test");
+        LoadSceneWithLoading("UI_Test");
     }
 
     public void OnClickLocalMainMenu()
