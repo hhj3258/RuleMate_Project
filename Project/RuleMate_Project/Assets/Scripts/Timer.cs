@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
     public UnityEvent eventGameStart;
 
     [SerializeField]
-    private float limitTime = 90f;
+    public float limitTime = 90f;
 
     private float minute;
     private float second;
