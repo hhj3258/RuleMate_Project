@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjectInteraction : MonoBehaviour
 {
     private bool isCorrectObj = true;
-    private GameObject[] Tiles;
+    public GameObject[] Tiles;
 
     private string r2b;
     private bool tf = true;
@@ -13,8 +13,8 @@ public class ObjectInteraction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Tiles = GameObject.FindGameObjectsWithTag("Tile");
-        Debug.Log("tiles num : " + Tiles.Length);
+        //Tiles = GameObject.FindGameObjectsWithTag("Tile");
+        //Debug.Log("tiles num : " + Tiles.Length);
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class ObjectInteraction : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider col)
+    private void ChangeTile()
     {
         if (tf)
         {
@@ -36,7 +36,7 @@ public class ObjectInteraction : MonoBehaviour
             tf = true;
         }
 
-        if (isCorrectObj && col.gameObject.tag == "Player")
+        if (isCorrectObj)
         {
             for(int i=1; i<Tiles.Length; i++)
                 Tiles[i].GetComponent<Animation>().Play(r2b);

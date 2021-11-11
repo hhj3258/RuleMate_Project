@@ -25,25 +25,40 @@ public class ObjectInterSlider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        slider.minValue = progressMIN;
-        slider.maxValue = progressMAX;
-        slider.value = progress;
-
-        if (Input.GetKey(KeyCode.Z))
-        {
-            progress += 0.25f;
-        }
-        else
-        {
-            if(progress >= 0)
-                progress -= 0.25f;
-        }
-
-        if (progress > 0 && isMissioned == true)
-            slider.gameObject.SetActive(true);
-        else
-            slider.gameObject.SetActive(false);
+        ActiveSlider(isMissioned);
 
         //slider.transform.position = Camera.main.WorldToScreenPoint(this.transform.position + new Vector3(0, 0.8f, 0));
+    }
+
+    protected bool ActiveSlider(bool isMissioned)
+    {
+        if (isMissioned == true)
+        {
+            slider.minValue = progressMIN;
+            slider.maxValue = progressMAX;
+            slider.value = progress;
+
+            if (Input.GetKey(KeyCode.Z))
+            {
+                progress += 0.25f;
+            }
+            else
+            {
+                if (progress >= 0)
+                    progress -= 0.25f;
+            }
+
+            if (progress > 0)
+                slider.gameObject.SetActive(true);
+            else
+                slider.gameObject.SetActive(false);
+
+            if (progress == 100)
+                return true;
+            else
+                return false;
+        }
+        else
+            return false;
     }
 }
