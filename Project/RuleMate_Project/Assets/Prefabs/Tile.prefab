@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -3878868984875582698}
   - component: {fileID: 8983507133566345743}
   m_Layer: 0
-  m_Name: RedTile
+  m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 345412075839293322}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.555603, y: 10.706, z: -4.4179764}
+  m_LocalPosition: {x: -1.555603, y: 10.771, z: -4.4179764}
   m_LocalScale: {x: 1, y: 0.01, z: 1}
   m_Children:
   - {fileID: 1839401228430574443}
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 43d6b7073ebc1294f9bb99a8dbbd57ff, type: 2}
+  - {fileID: 2100000, guid: db355d4f25ba3b249949da3caaeb4d5d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,8 +110,8 @@ Animation:
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 479bcb3504d192a4ca33f48646385562, type: 2}
   m_Animations:
+  - {fileID: 7400000, guid: d61d1a7eeb4883b4ca50349e702288d2, type: 2}
   - {fileID: 7400000, guid: 479bcb3504d192a4ca33f48646385562, type: 2}
-  - {fileID: 7400000, guid: c716aae1582605b4e9106e8dd6a0f01d, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 345412075839293322}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fece4a975a9065a428b76f6c4615d922, type: 3}
   m_Name: 
@@ -139,7 +139,7 @@ Animator:
   m_GameObject: {fileID: 345412075839293322}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c73217fc92f9ee7468c31880ab75e870, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5ffdf7db0a6754947a24e1538da4c7c2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
