@@ -92,13 +92,27 @@ public class TalkEvent : MonoBehaviour
 
     protected void Talk(string who, string txt)
     {
+        // 대사 종류
+        // 메이, 브레이, 메이브레이, 친구들, 집주인, 연출
         if (who == "메이")
             MayTalk(txt);
-        else if(who == "브레이")
+        else if (who == "브레이")
             BreyTalk(txt);
-        else
+        else if (who == "메이브레이")
         {
             MayBreyTalk(txt);
+        }
+        else if (who == "친구들")
+        {
+            BreyTalk(txt);
+        }
+        else if (who == "집주인")
+        {
+            BreyTalk(txt);
+        }
+        else if (who == "연출")
+        {
+            BreyTalk(txt);
         }
     }
 }
