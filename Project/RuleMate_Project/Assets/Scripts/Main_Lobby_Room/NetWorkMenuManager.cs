@@ -16,15 +16,16 @@ public class NetWorkMenuManager : MonoBehaviourPunCallbacks
     [Header("Lobby")]
     public GameObject LobbyPanel;
     public InputField RoomInput;
-    public TextMeshProUGUI WelcomeText;
+    //public TextMeshProUGUI WelcomeText;
     public TextMeshProUGUI LobbyInfoText;
     public Button[] CellBtn;
     public Button PreviousBtn;
     public Button NextBtn;
+    public Text txtPage;
 
     [Header("Room")]
     public GameObject RoomPanel;
-    public TextMeshProUGUI[] PlayerNickNameTexts;
+    public Text[] PlayerNickNameTexts;
 
     public Text[] ChatText;
     public InputField ChatInput;
@@ -107,7 +108,7 @@ public class NetWorkMenuManager : MonoBehaviourPunCallbacks
         MainMenuPanel.SetActive(false);
 
         PhotonNetwork.LocalPlayer.NickName = NickNameInput.text;
-        WelcomeText.text = "Welcome! " + PhotonNetwork.LocalPlayer.NickName;
+        //WelcomeText.text = "Welcome! " + PhotonNetwork.LocalPlayer.NickName;
         myList.Clear();
     }
 
@@ -133,18 +134,29 @@ public class NetWorkMenuManager : MonoBehaviourPunCallbacks
     {
         // 최대페이지
         maxPage = (myList.Count % CellBtn.Length == 0) ? myList.Count / CellBtn.Length : myList.Count / CellBtn.Length + 1;
-
         // 이전, 다음버튼
         PreviousBtn.interactable = (currentPage <= 1) ? false : true;
         NextBtn.interactable = (currentPage >= maxPage) ? false : true;
 
+        if (maxPage == 0)
+            txtPage.text = currentPage + "/" + "1";
+        else
+            txtPage.text = currentPage + "/" + maxPage.ToString();
+
+        //Debug.Log("maxPage: " + maxPage);
+        //Debug.Log("myList.Count: " + myList.Count);
+        //Debug.Log("CellBtn.Length: " + CellBtn.Length);
+
         // 페이지에 맞는 리스트 대입
         multiple = (currentPage - 1) * CellBtn.Length;
+
         for (int i = 0; i < CellBtn.Length; i++)
         {
-            CellBtn[i].interactable = (multiple + i < myList.Count) ? true : false;
-            CellBtn[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = (multiple + i < myList.Count) ? myList[multiple + i].Name : "";
-            CellBtn[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = (multiple + i < myList.Count) ? myList[multiple + i].PlayerCount + "/" + myList[multiple + i].MaxPlayers : "";
+            bool isActiveRoom= (multiple + i < myList.Count) ? true : false;
+            CellBtn[i].interactable = isActiveRoom;
+            CellBtn[i].transform.GetChild(2).gameObject.SetActive(isActiveRoom);
+            CellBtn[i].transform.GetChild(0).GetComponent<Text>().text = (multiple + i < myList.Count) ? myList[multiple + i].Name : "";
+            CellBtn[i].transform.GetChild(1).GetComponent<Text>().text = (multiple + i < myList.Count) ? myList[multiple + i].PlayerCount + "/" + myList[multiple + i].MaxPlayers : "";
         }
     }
 
@@ -158,7 +170,7 @@ public class NetWorkMenuManager : MonoBehaviourPunCallbacks
                 if (!myList.Contains(roomList[i])) myList.Add(roomList[i]);
                 else myList[myList.IndexOf(roomList[i])] = roomList[i];
             }
-            else if (myList.IndexOf(roomList[i]) != -1) 
+            else if (myList.IndexOf(roomList[i]) != -1)
                 myList.RemoveAt(myList.IndexOf(roomList[i]));
         }
         MyListRenewal();

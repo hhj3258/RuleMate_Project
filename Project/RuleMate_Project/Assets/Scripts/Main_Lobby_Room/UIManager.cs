@@ -73,7 +73,7 @@ public class UIManager : MonoBehaviour
 
     public void OnClickLocalGameStart()
     {
-        LoadSceneWithLoading("UI_Test");
+        LoadSceneWithLoading("EventScene");
     }
 
     public void OnClickLocalMainMenu()
