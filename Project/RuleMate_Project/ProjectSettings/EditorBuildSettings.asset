@@ -7,15 +7,12 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Main_Lobby_Room.unity
-    guid: d2fd4d44fae86ba4da639091e8bf1c1f
-  - enabled: 1
-    path: Assets/Scenes/EventScene.unity
-    guid: bb90cdc52714f584798e98cb68dff0fd
+    guid: 35a07e90bd37aec41b7ef3890aa14ece
   - enabled: 1
     path: Assets/Scenes/Multi/MultiMainGameTest 1.unity
     guid: b0b0fbe458b893c4481062d2530aec55
   - enabled: 1
-    path: Assets/Scenes/Map_Test.unity
+    path: Assets/Scenes/Local_InGame.unity
     guid: 59c6cda554d7f7d48b6e0c0f8f2b114f
   - enabled: 1
     path: Assets/Scenes/Loading.unity
@@ -23,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UI_Test.unity
     guid: e7f964285ad6d8747926b5cb5c60f855
+  - enabled: 1
+    path: Assets/Scenes/EventScene.unity
+    guid: 1c39aa99b4b6e5146ba0b3097bb356cd
   m_configObjects: {}
