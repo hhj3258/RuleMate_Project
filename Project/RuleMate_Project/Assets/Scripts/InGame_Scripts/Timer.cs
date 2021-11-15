@@ -6,17 +6,13 @@ using UnityEngine.Events;
 
 public class Timer : MonoBehaviour
 {
-    public UnityEvent eventGameStart;
-
-    [SerializeField]
-    public float limitTime = 90f;
+    [SerializeField] float limitTime = 90f;
 
     private float minute;
     private float second;
 
     public Text timer;
 
-    float unscaleTimer;
     bool isGameStart;
 
     //나중에 쓸꺼
@@ -28,33 +24,37 @@ public class Timer : MonoBehaviour
         get { return IsTimeOver; }
     }
 
+    public bool IsGameStart
+    {
+        get { return isGameStart; }
+        set { isGameStart = value; }
+    }
+
     private void Start()
     {
         isGameStart = false;
+        Time.timeScale = 1;
         InGameUIManager = FindObjectOfType<InGameUIManager>();
     }
 
     void Update()
     {
+        if (isGameStart == false)
+            return;
+
         limitTime -= Time.deltaTime;
         minute = (limitTime % 3600) / 60;
         second = (limitTime % 3600) % 60;
 
         timer.text = ((int)minute + " : " + (int)second).ToString();
 
-        if (limitTime <= 59f)
+        if (limitTime <= 87f)
         {
             timeOver = true;
             InGameUIManager.OnResult();
             Time.timeScale = 0;
+            timer.text = "0 : 00";
         }
 
-        unscaleTimer += Time.unscaledDeltaTime;
-        if (unscaleTimer >= 0.8f && isGameStart == false)
-        {
-            Time.timeScale = 1;
-            eventGameStart.Invoke();
-            isGameStart = true;
-        }
     }
 }
