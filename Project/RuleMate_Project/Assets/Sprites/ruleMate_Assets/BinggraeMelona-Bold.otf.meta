@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 29e9fdfce6a2f4bdf9322c29e0b078e8
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Binggrae Melona
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a46591eeaf7254de68ed97e44f809d53, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
