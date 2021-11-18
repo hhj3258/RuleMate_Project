@@ -16,6 +16,7 @@ public class Mission1 : MonoBehaviour
     float progress = 0;
     float progressMIN = 0;
     float progressMAX = 100;
+    bool isMissioned = false;
 
     public GameObject[] Tiles;
     private Animation[] ani;
@@ -40,6 +41,28 @@ public class Mission1 : MonoBehaviour
     void Update()
     {
         slider.value = progress;
+
+        if (Input.GetKeyDown(KeyCode.Z) && isMissioned)
+        {
+            progress += 20f;
+            Debug.Log("눌렀음 " + progress);
+        }
+        else
+        {
+            if (progress >= 0)
+                progress -= 0.10f;
+        }
+
+        if (progress >= 100)
+        {
+            //포인트올리기 추가
+            MissionClear();
+            waterBottom.SetActive(false);
+            Messege.SetActive(false);
+            tempMessege.SetActive(true);
+            slider.gameObject.SetActive(false);
+            gameObject.SetActive(false);
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -47,26 +70,7 @@ public class Mission1 : MonoBehaviour
         if(other.tag == "Player")
         {
             slider.gameObject.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.Z))
-            {
-                progress += 20f;
-                Debug.Log("눌렀음 "+progress);
-            }
-            else
-            {
-                if(progress >= 0)
-                    progress -= 0.10f;
-            }
-            if(progress >= 100)
-            {
-                //포인트올리기 추가
-                MissionClear();
-                waterBottom.SetActive(false);
-                Messege.SetActive(false);
-                tempMessege.SetActive(true);
-                slider.gameObject.SetActive(false);
-                gameObject.SetActive(false);
-            } 
+            isMissioned = true;
         }
         //Debug.Log("들어옴");
     }
@@ -75,6 +79,7 @@ public class Mission1 : MonoBehaviour
     {
         slider.gameObject.SetActive(false);
         progress = 0;
+        isMissioned = false;
     }
 
     void MissionClear()
