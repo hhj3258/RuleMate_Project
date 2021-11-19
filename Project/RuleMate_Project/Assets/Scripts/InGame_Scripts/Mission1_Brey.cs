@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Mission1 : MonoBehaviour
+public class Mission1_Brey : MonoBehaviour
 {
-    //물기제거미션_메이
+    //물기제거미션_브레이
 
     public GameObject waterBottom;
     public GameObject thisMissionMsg;
@@ -26,7 +26,7 @@ public class Mission1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        waterBottom.SetActive(true);
+        waterBottom.SetActive(false);
         thisMissionMsg.SetActive(true);
 
         slider.minValue = progressMIN;
@@ -35,10 +35,8 @@ public class Mission1 : MonoBehaviour
         progress = 0;
 
         ani = new Animation[Tiles.Length];
-        for(int i=0; i<Tiles.Length; i++)
-        {
+        for (int i = 0; i < Tiles.Length; i++)
             ani[i] = Tiles[i].GetComponent<Animation>();
-        }
     }
 
     // Update is called once per frame
@@ -46,7 +44,7 @@ public class Mission1 : MonoBehaviour
     {
         slider.value = progress;
 
-        if (Input.GetKeyDown(KeyCode.Z) && isMissioned)
+        if (Input.GetKeyDown(KeyCode.M) && isMissioned)
         {
             progress += 20f;
         }
@@ -64,7 +62,7 @@ public class Mission1 : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.name == "TestPlayer1")
+        if (other.name == "Player02")
         {
             slider.gameObject.SetActive(true);
             isMissioned = true;
@@ -81,10 +79,10 @@ public class Mission1 : MonoBehaviour
     void MissionClear()
     {
         //포인트 올라가기
-        //브레이 미션 활성화하기
-        //활성화 된 브레이미션 미션리스트에 추가하기
+        //메이 미션 활성화하기
+        //활성화 된 메이미션 미션리스트에 추가하기
 
-        //waterBottom.SetActive(false);
+        //waterBottom.SetActive(true);
 
         thisMissionMsg.SetActive(false);
         nextMissionMsg.SetActive(true);
