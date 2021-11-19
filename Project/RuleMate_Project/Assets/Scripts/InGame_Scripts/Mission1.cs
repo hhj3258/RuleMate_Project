@@ -83,7 +83,7 @@ public class Mission1 : MonoBehaviour
 
     void MissionClear()
     {
-        //포인트 올라가기
+        //메이 포인트 올라가기 (추가 해야댐)
         //브레이 미션 활성화하기
         //활성화 된 브레이미션 미션리스트에 추가하기
 

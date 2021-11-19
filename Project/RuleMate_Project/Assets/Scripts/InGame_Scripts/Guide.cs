@@ -19,7 +19,7 @@ public class Guide : MonoBehaviour
         switch (cnt)
         {
             case 1: 
-                txt.text = "이동은 WASD로 합니다.";
+                txt.text = "이동은 WASD, 상호작용은 Z입니다. (브레이는 M) ";
                 break;
             case 2:
                 CountDown.SetActive(true);
