@@ -23,11 +23,14 @@ public class Mission1 : MonoBehaviour
     public GameObject[] Tiles;
     private Animation[] ani;
 
+    //public GameObject clearParticle;
+
     // Start is called before the first frame update
     void Start()
     {
         waterBottom.SetActive(true);
         thisMissionMsg.SetActive(true);
+        nextMissionMsg.SetActive(false);
 
         slider.minValue = progressMIN;
         slider.maxValue = progressMAX;
@@ -84,8 +87,9 @@ public class Mission1 : MonoBehaviour
         //브레이 미션 활성화하기
         //활성화 된 브레이미션 미션리스트에 추가하기
 
-        //waterBottom.SetActive(false);
+        waterBottom.SetActive(false);
 
+        //clearParticleC();
         thisMissionMsg.SetActive(false);
         nextMissionMsg.SetActive(true);
         slider.gameObject.SetActive(false);
@@ -101,6 +105,14 @@ public class Mission1 : MonoBehaviour
         NextMission.SetActive(true);
         thisMission.SetActive(false);
     }
+
+    /*
+    IEnumerator clearParticleC()
+    {
+        clearParticle.GetComponent<ParticleSystem>().Play();
+        yield return new WaitForSeconds(3.0f);
+    }
+    */
 
     IEnumerator wait1sec()
     {
