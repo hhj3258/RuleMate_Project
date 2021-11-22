@@ -15,7 +15,7 @@ public abstract class PlayerManager : MonoBehaviourPun
 
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float rotSpeed = 10f;
-    [SerializeField] float jumpPower = 5f;
+    //[SerializeField] float jumpPower = 5f;
 
     bool isJumping = false; // 점프 가능 여부
 
@@ -42,15 +42,15 @@ public abstract class PlayerManager : MonoBehaviourPun
         rigid.rotation = Quaternion.Slerp(rigid.rotation, newRotation, rotSpeed * Time.deltaTime);
     }
 
-    protected void Jump()
-    {
-        // 점프키를 눌렀으며 착지하지 않았다면
-        if (im.keyJump && !isJumping)
-        {
-            rigid.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
-            isJumping = true;
-        }
-    }
+    //protected void Jump()
+    //{
+    //    // 점프키를 눌렀으며 착지하지 않았다면
+    //    if (im.keyJump && !isJumping)
+    //    {
+    //        rigid.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
+    //        isJumping = true;
+    //    }
+    //}
 
     // 물체 잡기, 놓기 시 오브젝트 세팅
 

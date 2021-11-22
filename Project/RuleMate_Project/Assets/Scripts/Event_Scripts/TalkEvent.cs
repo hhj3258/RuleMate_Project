@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class TalkEvent : MonoBehaviour
 {
@@ -17,77 +18,62 @@ public class TalkEvent : MonoBehaviour
 
     public GameObject May_Image;
     public GameObject Brey_Image;
-    protected Color May_Color;
-    protected Color Brey_Color;
-
-    private void Start()
-    {
-        //May_Image = May_Message.GetComponent<Image>();
-        //May_Color = May_Image.material.color;
-        //May_Color = May_Image.color;
-
-        //Brey_Image = Brey_Message.GetComponent<Image>();
-        //Brey_Color = Brey_Image.material.color;
-        //Brey_Color = Brey_Image.color;
-    }
 
     protected void MayTalk(string txt)
     {
-        //메이 이미지는 선명, 브레이 이미지는 반투명
-        //May_Color.a = 1.0f;
-        //Brey_Color.a = 0.5f;
-        //May_Image.color = May_Color;
-        //Brey_Image.color = Brey_Color;
-
-        May_Image.SetActive(true);
-        Brey_Image.SetActive(false);
-
-        //May_Message.transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
-        //Brey_Message.transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
+        //May_Image.SetActive(true);
+        //Brey_Image.SetActive(false);
 
         May_Nametag.SetActive(true);
         Brey_Nametag.SetActive(false);
         MayTxtObj.SetActive(true);
         BreyTxtObj.SetActive(false);
-        May_Text.text = txt;
+
+        DOTween.Kill(May_Text);
+        May_Text.text = "";
+        May_Text.DOText(txt, (float)txt.Length / 20f);
     }
 
     protected void BreyTalk(string txt)
     {
-        //메이 이미지는 반투명, 브레이 이미지는 선명
-        //May_Color.a = 0.5f;
-        //Brey_Color.a = 1.0f;
-        //May_Image.color = May_Color;
-        //Brey_Image.color = Brey_Color;
-
-        May_Image.SetActive(false);
-        Brey_Image.SetActive(true);
-
-        //May_Message.transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
-        //Brey_Message.transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
+        //May_Image.SetActive(false);
+        //Brey_Image.SetActive(true);
 
         May_Nametag.SetActive(false);
         Brey_Nametag.SetActive(true);
         MayTxtObj.SetActive(false);
         BreyTxtObj.SetActive(true);
-        Brey_Text.text = txt;
+
+        DOTween.Kill(Brey_Text);
+        Brey_Text.text = "";
+        Brey_Text.DOText(txt, (float)txt.Length/20f);
     }
 
     protected void MayBreyTalk(string txt)
     {
-        //May_Color.a = 1.0f;
-        //Brey_Color.a = 1.0f;
-        //May_Image.color = May_Color;
-        //Brey_Image.color = Brey_Color;
-
-        May_Image.SetActive(true);
-        Brey_Image.SetActive(true);
+        //May_Image.SetActive(true);
+        //Brey_Image.SetActive(true);
 
         May_Nametag.SetActive(true);
         Brey_Nametag.SetActive(true);
         MayTxtObj.SetActive(true);
         BreyTxtObj.SetActive(false);
-        May_Text.text = txt;
+
+        DOTween.Kill(May_Text);
+        May_Text.text = "";
+        May_Text.DOText(txt, (float)txt.Length/20f);
+    }
+
+    protected void ExtraTalk(string txt)
+    {
+        May_Nametag.SetActive(false);
+        Brey_Nametag.SetActive(false);
+        MayTxtObj.SetActive(true);
+        BreyTxtObj.SetActive(false);
+
+        DOTween.Kill(May_Text);
+        May_Text.text = "";
+        May_Text.DOText(txt, (float)txt.Length / 20f);
     }
 
     protected void Talk(string who, string txt)
@@ -104,15 +90,15 @@ public class TalkEvent : MonoBehaviour
         }
         else if (who == "친구들")
         {
-            BreyTalk(txt);
+            ExtraTalk(txt);
         }
         else if (who == "집주인")
         {
-            BreyTalk(txt);
+            ExtraTalk(txt);
         }
         else if (who == "연출")
         {
-            BreyTalk(txt);
+            ExtraTalk(txt);
         }
     }
 }

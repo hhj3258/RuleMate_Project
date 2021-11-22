@@ -11,7 +11,7 @@ public class NetWorkMenuManager : MonoBehaviourPunCallbacks
     [Header("MainMenu")]
     public GameObject MainMenuPanel;
     public Button btnMulti;
-    public InputField NickNameInput;
+    //public InputField NickNameInput;
 
     [Header("Lobby")]
     public GameObject LobbyPanel;
@@ -107,7 +107,7 @@ public class NetWorkMenuManager : MonoBehaviourPunCallbacks
         RoomPanel.SetActive(false);
         MainMenuPanel.SetActive(false);
 
-        PhotonNetwork.LocalPlayer.NickName = NickNameInput.text;
+        //PhotonNetwork.LocalPlayer.NickName = NickNameInput.text;
         //WelcomeText.text = "Welcome! " + PhotonNetwork.LocalPlayer.NickName;
         myList.Clear();
     }

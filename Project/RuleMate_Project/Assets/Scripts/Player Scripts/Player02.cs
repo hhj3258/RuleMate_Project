@@ -12,7 +12,6 @@ public class Player02 : PlayerManager
 
     void Update()
     {
-        Jump();
         SetAnim();
 
         if (im.keyCatchOrRelease)
