@@ -16,12 +16,12 @@ public class Timer : MonoBehaviour
     bool isGameStart;
 
     //나중에 쓸꺼
-    private bool timeOver = false;
+    private bool isTimeOver = false;
     InGameUIManager InGameUIManager;
 
     public bool IsTimeOver
     {
-        get { return IsTimeOver; }
+        get { return isTimeOver; }
     }
 
     public bool IsGameStart
@@ -50,10 +50,11 @@ public class Timer : MonoBehaviour
 
         if (limitTime <= 87f)
         {
-            timeOver = true;
+            isTimeOver = true;
             InGameUIManager.OnResult();
             Time.timeScale = 0;
             timer.text = "0 : 00";
+            LocalGameManager.instance.isStart = false;
         }
 
     }

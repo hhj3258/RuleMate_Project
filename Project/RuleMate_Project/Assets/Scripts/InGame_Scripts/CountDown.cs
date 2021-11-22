@@ -2,42 +2,50 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class CountDown : MonoBehaviour
 {
     public Text timeTxt;
     float nowTime;
-    InGameManager inGameManager;
+    int realTime;
+    int cnt;
+    Sequence mySequence;
 
-    private void Awake()
+    private void OnEnable()
     {
-        inGameManager = FindObjectOfType<InGameManager>();
-    }
+        cnt = 3;
 
-    void Start()
-    {
-        CountStart();
+        transform.localScale = Vector3.zero;
+        transform.rotation = new Quaternion(0f, 0f, 180f, 0f);
+        mySequence = DOTween.Sequence().SetLoops(4);
+        mySequence.Join(transform.DORotate(new Vector3(0f, 0f, -360f), 1f, RotateMode.FastBeyond360))
+                            .Join(transform.DOScale(1, 1f).SetEase(Ease.OutExpo));
     }
 
     private void Update()
     {
         nowTime -= Time.deltaTime;
-        CountStart();
+        realTime = (int)nowTime + 3;
+
+        CountStart(realTime);
     }
 
-    public void CountStart()
+    public void CountStart(int t)
     {
-        float realTime = nowTime + 4f;
+        if (t != cnt)
+            return;
 
-        if (realTime >= 1f)
-            timeTxt.text = (int)realTime + "";
-        else
+        if (t >= 1)
+            timeTxt.text = t + "";
+        else if (t == 0)
             timeTxt.text = "START !";
+        
+        cnt--;
 
-        if (realTime <= 0f)
+        if (t < 0)
         {
-            inGameManager.May.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-            inGameManager.Brey.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            LocalGameManager.instance.isStart = true;
             GameObject.Find("Timer").GetComponent<Timer>().IsGameStart = true;
             gameObject.SetActive(false);
         }
