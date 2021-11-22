@@ -9,17 +9,19 @@ public class InputManager : MonoBehaviour
     [HideInInspector] public float v; // W || S
     [HideInInspector] public bool keyCatchOrRelease; // 잡기 || 놓기
     [HideInInspector] public bool keyPause;
-    [HideInInspector] public bool keyJump;
+    //[HideInInspector] public bool keyJump;
 
     virtual protected void Update()
     {
-        h = Input.GetAxisRaw("Horizontal");
-        v = Input.GetAxisRaw("Vertical");
-
-        keyCatchOrRelease = Input.GetKeyDown(KeyCode.X);
         keyPause = Input.GetKeyDown(KeyCode.Escape);
-        keyJump = Input.GetKeyDown(KeyCode.Space);
 
+        if (LocalGameManager.instance.isStart)
+        {
+            h = Input.GetAxisRaw("Horizontal");
+            v = Input.GetAxisRaw("Vertical");
+            keyCatchOrRelease = Input.GetKeyDown(KeyCode.X);
+        }
+        
 #if UNITY_EDITOR
         // 현재 씬 재시작
         if (Input.GetKeyDown(KeyCode.R))

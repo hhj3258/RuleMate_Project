@@ -16,7 +16,7 @@ public class MultiPlayerManager : PlayerManager
         if (!photonView.IsMine)
             return;
 
-        Jump();
+        //Jump();
         SetAnim();
 
         if (im.keyCatchOrRelease)
