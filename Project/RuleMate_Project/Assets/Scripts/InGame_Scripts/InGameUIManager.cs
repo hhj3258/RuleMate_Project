@@ -24,7 +24,7 @@ public class InGameUIManager : UIManager
     private void Start()
     {
         DayPanel.transform.Find("Nday").GetComponent<Text>().text = LocalGameManager.instance.toDay.ToString()+" DAY";
-        DayPanelFade();
+        Invoke("DayPanelFade", 0.5f);
     }
 
     private void Update()
@@ -88,14 +88,14 @@ public class InGameUIManager : UIManager
         var imgs = DayPanel.GetComponentsInChildren<Image>();
         // 페이드 효과
         foreach (var img in imgs)
-            img.DOFade(0f, 2f);
+            img.DOFade(0f, 3f);
 
         var txts = DayPanel.GetComponentsInChildren<Text>();
         foreach (var txt in txts)
-            txt.DOFade(0f, 2f);
+            txt.DOFade(0f, 3f);
 
         // 페이드 효과 후 Active => false
-        Invoke("DayPanelActive", 2f);
+        Invoke("DayPanelActive", 3f);
     }
 
     void DayPanelActive() => DayPanel.SetActive(false);

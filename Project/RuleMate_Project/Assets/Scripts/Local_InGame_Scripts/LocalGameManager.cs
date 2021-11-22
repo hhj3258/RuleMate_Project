@@ -12,6 +12,8 @@ public class LocalGameManager : MonoBehaviour
     public int randDay04Event;
     public int randDay08Event;
 
+    public bool isStart;
+
     // 싱글톤
     public static LocalGameManager instance;
 
@@ -22,6 +24,7 @@ public class LocalGameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         toDay = 1;
+        isStart = false;
     }
 
     private void Start()
@@ -53,14 +56,18 @@ public class LocalGameManager : MonoBehaviour
         if (scene.name == "Local_InGame")
         {
             toDay++;
+            isStart = false;
         }
 
         if (scene.name == "Main_Lobby_Room")
         {
             Time.timeScale = 1;
+            
+            if (instance != null)
+                Destroy(this.gameObject);
 
             SceneManager.sceneLoaded -= OnSceneLoaded;
-            Destroy(this.gameObject);
+            
         }
     }
 
