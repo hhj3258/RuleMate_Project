@@ -1,0 +1,15 @@
+x,B-기쁨
+x,B-기쁨
+x,B-행복
+x,B-행복-OFF
+x,B-슬픔
+M-화남,B-슬픔-OFF
+M-화남-OFF,B-화남
+M-화남,B-화남-OFF
+M-화남-OFF,B-스탠딩
+M-화남,B-스탠딩-OFF
+M-화남-OFF,B-스탠딩
+M-화남-OFF,B-스탠딩
+M-곤란,B-스탠딩-OFF
+M-곤란,B-스탠딩-OFF
+M-곤란-OFF,B-행복

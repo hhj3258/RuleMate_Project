@@ -1,0 +1,16 @@
+M-스탠딩,B-스탠딩-OFF
+M-스탠딩,B-스탠딩-OFF
+M-스탠딩-OFF,B-스탠딩
+M-행복,B-스탠딩-OFF
+M-스탠딩,B-스탠딩-OFF
+M-행복,B-스탠딩-OFF
+M-행복-OFF,B-기쁨
+M-행복,B-기쁨-OFF
+M-행복,B-기쁨-OFF
+M-행복-OFF,B-기쁨
+M-행복,B-기쁨-OFF
+x,B-스탠딩
+x,B-슬픔
+x,B-슬픔
+x,B-슬픔-OFF
+x,B-슬픔
