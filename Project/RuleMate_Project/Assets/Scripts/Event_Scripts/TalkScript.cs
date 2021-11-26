@@ -21,7 +21,7 @@ public class TalkScript : TalkEvent
         else
         {
             //Debug.Log("Day: " + LocalGameManager.instance.toDay);
-            SetTable(LocalGameManager.instance.toDay + 1);
+            SetTable(LocalGameManager.instance.toDay);
         }
 
         May_Image.SetActive(false);
@@ -40,21 +40,18 @@ public class TalkScript : TalkEvent
                        .Append(txtClick.DOFade(0.5f, 2));
     }
 
-    void Update()
+    public void OnClickNextText()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (n == lines.Length)
         {
-            if (n == lines.Length)
-            {
-                Debug.Log("대화 끝");
-                LoadingSceneController.LoadingInstance.LoadScene("Local_InGame");
-                return;
-            }
-
-            TalkSelect(n);
-            SetImages(n);
-            n++;
+            Debug.Log("대화 끝");
+            LoadingSceneController.LoadingInstance.LoadScene("Local_InGame");
+            return;
         }
+
+        TalkSelect(n);
+        SetImages(n);
+        n++;
     }
 
     public void SetTable(int today)
@@ -115,7 +112,7 @@ public class TalkScript : TalkEvent
         string txtTemp = "";
         for (int i = 1; i < column.Length; i++)
         {
-            if(i==column.Length-1)
+            if (i == column.Length - 1)
                 txtTemp += (column[i]);
             else
                 txtTemp += (column[i] + ',');
@@ -136,7 +133,7 @@ public class TalkScript : TalkEvent
             May_Image.GetComponent<Image>().sprite = Resources.Load<Sprite>(temp);
             May_Image.SetActive(true);
         }
-        else if(column[0] == "x")
+        else if (column[0] == "x")
         {
             May_Image.SetActive(false);
         }
@@ -152,7 +149,7 @@ public class TalkScript : TalkEvent
             Brey_Image.GetComponent<Image>().sprite = Resources.Load<Sprite>(temp);
             Brey_Image.SetActive(true);
         }
-        else if(column[1] == "x")
+        else if (column[1] == "x")
         {
             Brey_Image.SetActive(false);
         }

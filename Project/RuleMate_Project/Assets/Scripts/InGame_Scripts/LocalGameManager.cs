@@ -53,18 +53,22 @@ public class LocalGameManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        toDay++;
+
         if (scene.name == "Local_InGame")
         {
-            toDay++;
             isStart = false;
         }
 
         if (scene.name == "Main_Lobby_Room")
         {
             Time.timeScale = 1;
-            
-            if (instance != null)
+
+            if (this.gameObject != null)
+            {
                 Destroy(this.gameObject);
+                Destroy(this);
+            }
 
             SceneManager.sceneLoaded -= OnSceneLoaded;
             

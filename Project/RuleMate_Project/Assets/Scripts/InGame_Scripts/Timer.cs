@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class Timer : MonoBehaviour
 {
     [SerializeField] float limitTime = 90f;
-
+    [SerializeField] float endTime = 0f;
     private float minute;
     private float second;
 
@@ -48,7 +48,7 @@ public class Timer : MonoBehaviour
 
         timer.text = ((int)minute + " : " + (int)second).ToString();
 
-        if (limitTime <= 87f)
+        if (limitTime <= endTime)
         {
             isTimeOver = true;
             InGameUIManager.OnResult();

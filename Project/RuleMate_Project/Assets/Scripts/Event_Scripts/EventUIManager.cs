@@ -2,32 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
-using TMPro;
 
-public class InGameUIManager : UIManager
+public class EventUIManager : MonoBehaviour
 {
     [SerializeField] GameObject pausePanel;
-
-    [Header("Ready")]
-    [SerializeField] Button btnReady;
-    [SerializeField] GameObject countDown;
-
-    [Header("InGame")]
-    [SerializeField] TextMeshProUGUI txtMayPoint;
-    [SerializeField] TextMeshProUGUI txtBreayPoint;
+    [SerializeField] GameObject OptionPanel;
 
     [Header("DayPanel")]
     [SerializeField] GameObject DayPanel;
 
-    [Header("ResultPanel")]
-    [SerializeField] GameObject ResultPanel;
-
     private void Start()
     {
-        DayPanel.transform.Find("Nday").GetComponent<Text>().text = LocalGameManager.instance.toDay.ToString()+"DAY";
+        if(LocalGameManager.instance != null)
+            DayPanel.transform.Find("Nday").GetComponent<Text>().text = LocalGameManager.instance.toDay.ToString() + "DAY";
         Invoke("DayPanelFade", 0.5f);
     }
 
@@ -59,12 +48,12 @@ public class InGameUIManager : UIManager
         }
     }
 
-    public override void OnClickMainMenu()
+    public void OnClickMainMenu()
     {
         if (PhotonNetwork.IsConnected)
             PhotonNetwork.Disconnect();
 
-        LoadSceneWithLoading("Main_Lobby_Room");
+        LoadingSceneController.LoadingInstance.LoadScene("Main_Lobby_Room");
     }
 
     public void OnClickResume()
@@ -72,19 +61,14 @@ public class InGameUIManager : UIManager
         OnPauseMenu();
     }
 
-    // Result 패널의 확인 버튼
-    public void OnClickNextStage()
+    public void OnClickOption()
     {
-        int nextDay = LocalGameManager.instance.toDay+1;
-        if (nextDay == 4 || nextDay == 8 || nextDay == 12 || nextDay == 14)
-            LoadSceneWithLoading("EventScene");
-        else
-            LoadSceneWithLoading("Local_InGame");
+        OptionPanel.SetActive(true);
     }
 
-    public void OnResult()
+    public void OnClickOptionClose()
     {
-        ResultPanel.SetActive(true);
+        OptionPanel.SetActive(false);
     }
 
     public void DayPanelFade()
@@ -103,10 +87,4 @@ public class InGameUIManager : UIManager
     }
 
     void DayPanelActive() => DayPanel.SetActive(false);
-
-    public void OnClickReady()
-    {
-        btnReady.gameObject.SetActive(false);
-        countDown.SetActive(true);
-    }
 }

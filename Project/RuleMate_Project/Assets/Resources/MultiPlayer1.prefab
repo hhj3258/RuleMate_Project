@@ -2865,7 +2865,6 @@ MonoBehaviour:
   v: 0
   keyCatchOrRelease: 0
   keyPause: 0
-  keyJump: 0
 --- !u!114 &4096304492409806905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2946,7 +2945,6 @@ MonoBehaviour:
   im: {fileID: 8857457311659070154}
   moveSpeed: 5
   rotSpeed: 10
-  jumpPower: 5
   objectMonitor: {fileID: 0}
   rayDistance: 1
 --- !u!1 &4137896654712286741
