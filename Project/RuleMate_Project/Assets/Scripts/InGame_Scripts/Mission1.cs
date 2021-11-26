@@ -67,8 +67,9 @@ public class Mission1 : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.name == "TestPlayer1")
+        if(other.name == "May")
         {
+            Debug.Log("stay");
             slider.gameObject.SetActive(true);
             isMissioned = true;
         }

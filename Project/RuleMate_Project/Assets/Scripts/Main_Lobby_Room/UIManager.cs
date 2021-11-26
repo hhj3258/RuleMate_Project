@@ -23,6 +23,12 @@ public class UIManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI txtMayPlayer;
     [SerializeField] TextMeshProUGUI txtBreayPlayer;
 
+    private void Awake()
+    {
+        //Application.targetFrameRate = 60;
+        Time.timeScale = 1;
+    }
+
     public void LoadSceneWithLoading(string sceneName)
     {
         LoadingSceneController.LoadingInstance.LoadScene(sceneName);

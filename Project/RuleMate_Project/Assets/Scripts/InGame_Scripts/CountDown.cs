@@ -46,7 +46,7 @@ public class CountDown : MonoBehaviour
         if (t < 0)
         {
             LocalGameManager.instance.isStart = true;
-            GameObject.Find("Timer").GetComponent<Timer>().IsGameStart = true;
+            GameObject.FindObjectOfType<Timer>().IsGameStart = true;
             gameObject.SetActive(false);
         }
     }

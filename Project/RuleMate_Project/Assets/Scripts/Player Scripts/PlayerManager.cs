@@ -17,7 +17,7 @@ public abstract class PlayerManager : MonoBehaviourPun
     [SerializeField] float rotSpeed = 10f;
     //[SerializeField] float jumpPower = 5f;
 
-    bool isJumping = false; // 점프 가능 여부
+    //bool isJumping = false; // 점프 가능 여부
 
     bool isPickNow = false; // 물체 잡았는지 여부
     Collider objCol = null; // 잡은 물체 저장
@@ -59,7 +59,7 @@ public abstract class PlayerManager : MonoBehaviourPun
         if (setBool)
         {
             // 잡기 시 물체 위치 설정
-            objCol.transform.localPosition = new Vector3(0, 0.7f, 0.7f);
+            objCol.transform.localPosition = new Vector3(0, -0.41f, 2.78f);
         }
 
         // 리지드바디 물리력 유무
@@ -121,10 +121,10 @@ public abstract class PlayerManager : MonoBehaviourPun
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        isJumping = false;  // 오브젝트에 닿으면 점프 가능
-    }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    isJumping = false;  // 오브젝트에 닿으면 점프 가능
+    //}
 
     protected abstract void SetAnim();
 }

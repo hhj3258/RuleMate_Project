@@ -63,7 +63,7 @@ public class Mission1_Brey : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.name == "Player02")
+        if (other.name == "Brey")
         {
             slider.gameObject.SetActive(true);
             isMissioned = true;

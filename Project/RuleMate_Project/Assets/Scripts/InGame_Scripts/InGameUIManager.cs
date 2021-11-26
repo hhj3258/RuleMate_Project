@@ -11,6 +11,10 @@ public class InGameUIManager : UIManager
 {
     [SerializeField] GameObject pausePanel;
 
+    [Header("Ready")]
+    [SerializeField] Button btnReady;
+    [SerializeField] GameObject countDown;
+
     [Header("InGame")]
     [SerializeField] TextMeshProUGUI txtMayPoint;
     [SerializeField] TextMeshProUGUI txtBreayPoint;
@@ -23,7 +27,7 @@ public class InGameUIManager : UIManager
 
     private void Start()
     {
-        DayPanel.transform.Find("Nday").GetComponent<Text>().text = LocalGameManager.instance.toDay.ToString()+" DAY";
+        DayPanel.transform.Find("Nday").GetComponent<Text>().text = LocalGameManager.instance.toDay.ToString()+"DAY";
         Invoke("DayPanelFade", 0.5f);
     }
 
@@ -65,7 +69,7 @@ public class InGameUIManager : UIManager
 
     public void OnClickResume()
     {
-        pausePanel.SetActive(false);
+        OnPauseMenu();
     }
 
     // Result 패널의 확인 버튼
@@ -99,4 +103,10 @@ public class InGameUIManager : UIManager
     }
 
     void DayPanelActive() => DayPanel.SetActive(false);
+
+    public void OnClickReady()
+    {
+        btnReady.gameObject.SetActive(false);
+        countDown.SetActive(true);
+    }
 }
