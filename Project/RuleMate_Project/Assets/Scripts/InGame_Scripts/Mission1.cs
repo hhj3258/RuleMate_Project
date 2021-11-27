@@ -7,7 +7,8 @@ public class Mission1 : MonoBehaviour
 {
     //물기제거미션_메이
 
-    public GameObject waterBottom;
+    public GameObject thisMissionObj;
+    public GameObject nextMissionObj;
     public GameObject thisMissionMsg;
     public GameObject nextMissionMsg;
 
@@ -28,7 +29,10 @@ public class Mission1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        waterBottom.SetActive(true);
+        if(thisMissionObj != null)
+            thisMissionObj.SetActive(true);
+        if(nextMissionObj != null)
+            nextMissionObj.SetActive(false);
         thisMissionMsg.SetActive(true);
         nextMissionMsg.SetActive(false);
 
@@ -88,7 +92,10 @@ public class Mission1 : MonoBehaviour
         //브레이 미션 활성화하기
         //활성화 된 브레이미션 미션리스트에 추가하기
 
-        waterBottom.SetActive(false);
+        if (thisMissionObj != null)
+            thisMissionObj.SetActive(false);
+        if (nextMissionObj != null)
+            nextMissionObj.SetActive(true);
 
         //clearParticleC();
         thisMissionMsg.SetActive(false);
