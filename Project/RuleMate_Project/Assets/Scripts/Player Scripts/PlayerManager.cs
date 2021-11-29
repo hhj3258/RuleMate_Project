@@ -5,7 +5,7 @@ using Photon.Pun;
 
 public abstract class PlayerManager : MonoBehaviourPun
 {
-    [SerializeField] protected GameObject playerPrefab;
+    protected GameObject playerPrefab;
     protected Animator anim;
 
     protected Rigidbody rigid;
@@ -23,6 +23,11 @@ public abstract class PlayerManager : MonoBehaviourPun
     Collider objCol = null; // 잡은 물체 저장
 
     public ObjectMonitor objectMonitor;
+
+    private void Awake()
+    {
+        playerPrefab = this.gameObject;
+    }
 
     protected void Move()
     {
@@ -59,7 +64,7 @@ public abstract class PlayerManager : MonoBehaviourPun
         if (setBool)
         {
             // 잡기 시 물체 위치 설정
-            objCol.transform.localPosition = new Vector3(0, -0.41f, 2.78f);
+            objCol.transform.localPosition = new Vector3(0, 0f, 0.8f);
         }
 
         // 리지드바디 물리력 유무

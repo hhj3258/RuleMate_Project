@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
 
     private void Awake()
     {
-        //Application.targetFrameRate = 60;
+        Application.targetFrameRate = 60;
         Time.timeScale = 1;
     }
 
