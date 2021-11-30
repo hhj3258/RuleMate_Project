@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Mission1_Brey : MonoBehaviour
+public class Mission1_Brey : MissionManager
 {
     //물기제거미션_브레이
 
@@ -65,14 +65,9 @@ public class Mission1_Brey : MonoBehaviour
             MissionClear();
         }
 
-        if (isMissioned == false)
-        {
-            slider.gameObject.SetActive(false);
-            progress = 0;
-        }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.name == "Brey")
         {
@@ -83,14 +78,18 @@ public class Mission1_Brey : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        slider.gameObject.SetActive(false);
+        progress = 0;
         isMissioned = false;
     }
 
     void MissionClear()
     {
-        //브레이 포인트 올라가기 (추가 해야댐)
+        //브레이 포인트 올라가기
         //메이 미션 활성화하기
         //활성화 된 메이미션 미션리스트에 추가하기
+
+        BreyScoreUp();
 
         if (thisMissionObj != null)
             thisMissionObj.SetActive(false);

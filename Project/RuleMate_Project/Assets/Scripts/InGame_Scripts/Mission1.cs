@@ -67,19 +67,12 @@ public class Mission1 : MonoBehaviour
         {
             MissionClear();
         }
-
-        if(isMissioned == false)
-        {
-            slider.gameObject.SetActive(false);
-            progress = 0;
-        }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if(other.name == "May")
         {
-            //Debug.Log("stay");
             slider.gameObject.SetActive(true);
             isMissioned = true;
         }
@@ -87,14 +80,18 @@ public class Mission1 : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        slider.gameObject.SetActive(false);
+        progress = 0;
         isMissioned = false;
     }
 
     void MissionClear()
     {
-        //메이 포인트 올라가기 (추가 해야댐)
+        //메이 포인트 올라가기
         //브레이 미션 활성화하기
         //활성화 된 브레이미션 미션리스트에 추가하기
+
+        //MayScoreUp();
 
         if (thisMissionObj != null)
             thisMissionObj.SetActive(false);
