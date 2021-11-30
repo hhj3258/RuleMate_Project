@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Mission1_Brey : MissionManager
+public class Mission1_Brey : MonoBehaviour
 {
     //물기제거미션_브레이
 
@@ -89,7 +89,7 @@ public class Mission1_Brey : MissionManager
         //메이 미션 활성화하기
         //활성화 된 메이미션 미션리스트에 추가하기
 
-        BreyScoreUp();
+        //BreyScoreUp();
 
         if (thisMissionObj != null)
             thisMissionObj.SetActive(false);

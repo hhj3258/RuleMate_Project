@@ -5,40 +5,32 @@ using UnityEngine.UI;
 
 public class MissionManager : MonoBehaviour
 {
-    /*
-    public GameObject mayScoreObj;
-    public GameObject breyScoreObj;
-    TextMeshProUGUI mayScoreTextMesh;
-    TextMeshProUGUI breyScoreTextMesh;
-    */
     public Text mayScoreTxt;
     public Text breyScoreTxt;
 
-    protected int mayScore = 0;
-    protected int breyScore = 0;
+    int mayScore = 1;
+    int breyScore = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        mayScore = 0;
-        breyScore = 0;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        mayScoreTxt.text = mayScore.ToString();
+        breyScoreTxt.text = breyScore.ToString();
     }
 
     protected void MayScoreUp()
     {
-        mayScore++;
-        mayScoreTxt.text = mayScore + "";
+        mayScore += 1;
     }
 
     protected void BreyScoreUp()
     {
-        breyScore++;
-        breyScoreTxt.text = breyScore + "";
+        breyScore += 1;
     }
 }

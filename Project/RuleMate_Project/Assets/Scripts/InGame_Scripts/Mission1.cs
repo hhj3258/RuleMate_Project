@@ -91,7 +91,7 @@ public class Mission1 : MonoBehaviour
         //브레이 미션 활성화하기
         //활성화 된 브레이미션 미션리스트에 추가하기
 
-        //MayScoreUp();
+
 
         if (thisMissionObj != null)
             thisMissionObj.SetActive(false);
