@@ -64,6 +64,12 @@ public class Mission1_Brey : MonoBehaviour
         {
             MissionClear();
         }
+
+        if (isMissioned == false)
+        {
+            slider.gameObject.SetActive(false);
+            progress = 0;
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -77,8 +83,6 @@ public class Mission1_Brey : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        slider.gameObject.SetActive(false);
-        progress = 0;
         isMissioned = false;
     }
 

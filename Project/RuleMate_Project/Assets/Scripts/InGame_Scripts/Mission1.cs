@@ -67,13 +67,19 @@ public class Mission1 : MonoBehaviour
         {
             MissionClear();
         }
+
+        if(isMissioned == false)
+        {
+            slider.gameObject.SetActive(false);
+            progress = 0;
+        }
     }
 
     private void OnTriggerStay(Collider other)
     {
         if(other.name == "May")
         {
-            Debug.Log("stay");
+            //Debug.Log("stay");
             slider.gameObject.SetActive(true);
             isMissioned = true;
         }
@@ -81,8 +87,6 @@ public class Mission1 : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        slider.gameObject.SetActive(false);
-        progress = 0;
         isMissioned = false;
     }
 
