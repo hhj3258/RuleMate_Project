@@ -5,37 +5,26 @@ using UnityEngine.UI;
 
 public class Guide : MonoBehaviour
 {
-    public Text txt;
-    int cnt = 0;
+    [SerializeField] string[] guides;
 
-    public GameObject CountDown;
+    public Text txt;
+    int idx;
 
     private void Start()
     {
-        if(LocalGameManager.instance.toDay > 1)
+        idx = 0;
+
+        if (LocalGameManager.instance.toDay > 1)
         {
-            //CountDown.SetActive(true);
             gameObject.SetActive(false);
         }
     }
 
-    void Update()
+    public void OnClickGuide()
     {
-        if (Input.GetMouseButtonDown(0) && LocalGameManager.instance.toDay == 1)
-        {
-            cnt++;
-
-            switch (cnt)
-            {
-                case 1:
-                    txt.text = "이동은 WASD, 상호작용은 Z입니다. (브레이는 M) ";
-                    break;
-                case 2:
-                    //CountDown.SetActive(true);
-                    gameObject.SetActive(false);
-                    break;
-            }
-        }
-
+        if(idx < guides.Length)
+            txt.text = guides[idx++];
+        else
+            gameObject.SetActive(false);
     }
 }
