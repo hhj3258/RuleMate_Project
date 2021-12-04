@@ -4098,8 +4098,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uAC8C\uC784 \uC124\uC815\uC774\uB098 \uD50C\uB808\uC774 \uD301 \uB4F1
-    \uB79C\uB364\uCD9C\uB825\uB418\uB294\uC790\uB9AC "
+  m_Text: "\uBA54\uC774\uB294 \uC9C0\uC800\uBD84\uD55C \uAC78 \uBABB\uCC38\uC544\uC694!"
 --- !u!224 &3521985758022806388
 RectTransform:
   m_ObjectHideFlags: 0

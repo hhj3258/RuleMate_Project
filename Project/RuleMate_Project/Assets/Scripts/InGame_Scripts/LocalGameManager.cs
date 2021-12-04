@@ -6,13 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class LocalGameManager : MonoBehaviour
 {
-    float mayPoint, breayPoint;
+    public int mayScore;
+    public int breyScore;
     public int toDay;
 
     public int randDay04Event;
     public int randDay08Event;
 
     public bool isStart;
+
+    public int MayMental;
+    public int BreyMental;
 
     // 싱글톤
     public static LocalGameManager instance;
@@ -29,8 +33,10 @@ public class LocalGameManager : MonoBehaviour
 
     private void Start()
     {
-        mayPoint = 0;
-        breayPoint = 0;
+        mayScore = 0;
+        breyScore = 0;
+        MayMental = 50;
+        BreyMental = 50;
         SceneManager.sceneLoaded += OnSceneLoaded;
 
         RandomEventScripts();
@@ -64,28 +70,14 @@ public class LocalGameManager : MonoBehaviour
         {
             Time.timeScale = 1;
 
-            if (this.gameObject != null)
+            if (this != null && this.gameObject != null)
             {
                 Destroy(this.gameObject);
                 Destroy(this);
             }
 
             SceneManager.sceneLoaded -= OnSceneLoaded;
-            
+
         }
     }
-
-    public void MayPoint()
-    {
-        mayPoint += 1f;
-        breayPoint -= 1f;
-    }
-
-    public void BreayPoint()
-    {
-        mayPoint -= 1f;
-        breayPoint += 1f;
-    }
-
-
 }
