@@ -20,8 +20,8 @@ public class UIManager : MonoBehaviour
     [Header("Local")]
     [SerializeField] GameObject MainMenuPanel;
     [SerializeField] GameObject LocalRoomPanel;
-    [SerializeField] TextMeshProUGUI txtMayPlayer;
-    [SerializeField] TextMeshProUGUI txtBreayPlayer;
+    [SerializeField] Text txtMayPlayer;
+    [SerializeField] Text txtBreayPlayer;
 
     private void Awake()
     {
@@ -73,8 +73,8 @@ public class UIManager : MonoBehaviour
         MainMenuPanel.SetActive(false);
         LocalRoomPanel.SetActive(true);
 
-        SelectManager.instance.localPlayer1 = Character.Player1;
-        SelectManager.instance.localPlayer2 = Character.Player2;
+        //SelectManager.instance.localPlayer1 = Character.Player1;
+        //SelectManager.instance.localPlayer2 = Character.Player2;
     }
 
     public void OnClickLocalGameStart()
@@ -95,16 +95,16 @@ public class UIManager : MonoBehaviour
             SelectManager.instance.localPlayer1 = Character.Player2;
             SelectManager.instance.localPlayer2 = Character.Player1;
 
-            txtMayPlayer.text = "P2";
-            txtBreayPlayer.text = "P1";
+            txtMayPlayer.text = "2P";
+            txtBreayPlayer.text = "1P";
         }
         else
         {
             SelectManager.instance.localPlayer1 = Character.Player1;
             SelectManager.instance.localPlayer2 = Character.Player2;
 
-            txtMayPlayer.text = "P1";
-            txtBreayPlayer.text = "P2";
+            txtMayPlayer.text = "1P";
+            txtBreayPlayer.text = "2P";
         }
     }
 

@@ -46,16 +46,16 @@ public class Timer : MonoBehaviour
         minute = (limitTime % 3600) / 60;
         second = (limitTime % 3600) % 60;
 
-        timer.text = ((int)minute + " : " + (int)second).ToString();
-
-        if (limitTime <= endTime)
+        if (limitTime <= endTime && isTimeOver == false)
         {
             isTimeOver = true;
             InGameUIManager.OnResult();
-            Time.timeScale = 0;
             timer.text = "0 : 00";
             LocalGameManager.instance.isStart = false;
         }
-
+        else if (isTimeOver == false)
+        {
+            timer.text = ((int)minute + " : " + (int)second).ToString();
+        }
     }
 }

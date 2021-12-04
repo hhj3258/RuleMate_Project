@@ -13,5 +13,10 @@ public class LocalInputManager : InputManager
             v = Input.GetAxisRaw("Vertical2");
             keyCatchOrRelease = Input.GetKeyDown(KeyCode.Period);
         }
+        else
+        {
+            h = 0;
+            v = 0;
+        }
     }
 }

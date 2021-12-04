@@ -21,7 +21,12 @@ public class InputManager : MonoBehaviour
             v = Input.GetAxisRaw("Vertical");
             keyCatchOrRelease = Input.GetKeyDown(KeyCode.X);
         }
-        
+        else
+        {
+            h = 0;
+            v = 0;
+        }
+
 #if UNITY_EDITOR
         // 현재 씬 재시작
         if (Input.GetKeyDown(KeyCode.R))
