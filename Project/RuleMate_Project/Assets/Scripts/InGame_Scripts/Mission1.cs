@@ -53,7 +53,7 @@ public class Mission1 : MonoBehaviour
     {
         slider.value = progress;
 
-        if (Input.GetKeyDown(KeyCode.Z) && isMissioned)
+        if (Input.GetKeyDown(KeyCode.Z) && isMissioned && LocalGameManager.instance.isStart)
         {
             progress += 20f;
         }

@@ -50,7 +50,7 @@ public class Mission1_Brey : MonoBehaviour
     {
         slider.value = progress;
 
-        if (Input.GetKeyDown(KeyCode.M) && isMissioned)
+        if (Input.GetKeyDown(KeyCode.M) && isMissioned && LocalGameManager.instance.isStart)
         {
             progress += 20f;
         }
