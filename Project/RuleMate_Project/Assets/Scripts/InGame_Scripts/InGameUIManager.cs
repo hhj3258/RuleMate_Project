@@ -16,19 +16,25 @@ public class InGameUIManager : UIManager
     [SerializeField] GameObject countDown;
 
     [Header("InGame")]
-    [SerializeField] TextMeshProUGUI txtMayPoint;
-    [SerializeField] TextMeshProUGUI txtBreayPoint;
+    [SerializeField] Text txtMayScore;
+    [SerializeField] Text txtBreyScore;
 
     [Header("DayPanel")]
     [SerializeField] GameObject DayPanel;
 
     [Header("ResultPanel")]
+    [SerializeField] Text txtGameOver;
     [SerializeField] GameObject ResultPanel;
+    [SerializeField] Slider sliderMay;
+    [SerializeField] Slider sliderBrey;
 
     private void Start()
     {
-        DayPanel.transform.Find("Nday").GetComponent<Text>().text = LocalGameManager.instance.toDay.ToString()+"DAY";
+        DayPanel.transform.Find("Nday").GetComponent<Text>().text = LocalGameManager.instance.toDay.ToString() + "DAY";
         Invoke("DayPanelFade", 0.5f);
+
+        txtMayScore.text = LocalGameManager.instance.mayScore.ToString();
+        txtBreyScore.text = LocalGameManager.instance.breyScore.ToString();
     }
 
     private void Update()
@@ -75,7 +81,7 @@ public class InGameUIManager : UIManager
     // Result 패널의 확인 버튼
     public void OnClickNextStage()
     {
-        int nextDay = LocalGameManager.instance.toDay+1;
+        int nextDay = LocalGameManager.instance.toDay + 1;
         if (nextDay == 4 || nextDay == 8 || nextDay == 12 || nextDay == 14)
             LoadSceneWithLoading("EventScene");
         else
@@ -84,8 +90,24 @@ public class InGameUIManager : UIManager
 
     public void OnResult()
     {
-        ResultPanel.SetActive(true);
+        txtGameOver.gameObject.SetActive(true);
+        txtGameOver.gameObject.transform.localScale = Vector3.zero;
+        txtGameOver.gameObject.transform.rotation = new Quaternion(0f, 0f, 180f, 0f);
+
+        Sequence mySequence = DOTween.Sequence();
+        mySequence.Join(txtGameOver.gameObject.transform.DORotate(new Vector3(0f, 0f, -360f), 1f, RotateMode.FastBeyond360))
+                            .Join(txtGameOver.gameObject.transform.DOScale(1, 1f).SetEase(Ease.OutExpo));
+
+        Invoke("ResultPanelActive", 3f);
     }
+
+    void ResultPanelActive() 
+    { 
+        ResultPanel.SetActive(true);
+        if(SoundManager.instance != null)
+            SoundManager.instance.PlayResultSong();
+    }
+
 
     public void DayPanelFade()
     {
