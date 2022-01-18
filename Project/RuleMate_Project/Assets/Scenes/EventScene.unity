@@ -827,7 +827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 904206580422024509}
-  OptionPanel: {fileID: 3052707788534967764}
+  Option: {fileID: 2130302876433759608, guid: f5c9fe03d850dbf4492aa491bac7f19b, type: 3}
   DayPanel: {fileID: 7934361375622231697}
 --- !u!1 &2025455434
 GameObject:
@@ -1141,7 +1141,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &2114798303
 Canvas:
   m_ObjectHideFlags: 0

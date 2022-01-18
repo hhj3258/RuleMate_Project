@@ -15,7 +15,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject txtPressKey;
 
     [Header("Option")]
-    [SerializeField] protected GameObject OptionPanel;
+    //[SerializeField]
+    protected GameObject OptionPanel;
 
     [Header("Local")]
     [SerializeField] GameObject MainMenuPanel;
@@ -28,7 +29,10 @@ public class UIManager : MonoBehaviour
         Application.targetFrameRate = 60;
         Time.timeScale = 1;
     }
-
+    private void Start()
+    {
+        OptionPanel = GameObject.Find("OptionUI").transform.Find("Option").gameObject;
+    }
     public void LoadSceneWithLoading(string sceneName)
     {
         LoadingSceneController.LoadingInstance.LoadScene(sceneName);

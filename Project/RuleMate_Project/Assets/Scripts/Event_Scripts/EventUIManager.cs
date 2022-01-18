@@ -8,7 +8,8 @@ using DG.Tweening;
 public class EventUIManager : MonoBehaviour
 {
     [SerializeField] GameObject pausePanel;
-    [SerializeField] GameObject OptionPanel;
+    //[SerializeField]
+    GameObject OptionPanel;
 
     [Header("DayPanel")]
     [SerializeField] GameObject DayPanel;
@@ -18,6 +19,7 @@ public class EventUIManager : MonoBehaviour
         if(LocalGameManager.instance != null)
             DayPanel.transform.Find("Nday").GetComponent<Text>().text = LocalGameManager.instance.toDay.ToString() + "DAY";
         Invoke("DayPanelFade", 0.5f);
+        OptionPanel = GameObject.Find("OptionUI").transform.Find("Option").gameObject;
     }
 
     private void Update()

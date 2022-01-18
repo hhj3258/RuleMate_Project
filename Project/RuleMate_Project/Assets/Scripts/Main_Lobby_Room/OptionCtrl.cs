@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class OptionCtrl : MonoBehaviour
 {
@@ -10,14 +11,15 @@ public class OptionCtrl : MonoBehaviour
     public Dropdown control;
     public Dropdown resolution;
 
-    //private int horizontal;
-    //private int vertical;
-    //public Toggle toggle;
+    public Toggle toggleWindow;
 
-    public static bool isWindowed;
-    private string isWindowedValue;
+    //public static bool isWindowed;
+    private bool isWindowedValue;
 
-    
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -27,20 +29,27 @@ public class OptionCtrl : MonoBehaviour
         effect.value = PlayerPrefs.GetFloat("EffectValue");
         control.value = PlayerPrefs.GetInt("ControlValue");
         resolution.value = PlayerPrefs.GetInt("ResolutionValue");
-        isWindowedValue = PlayerPrefs.GetString("isWindowed");
-        isWindowed = System.Convert.ToBoolean(isWindowedValue);
+        Debug.Log("1" + PlayerPrefs.GetInt("isWindowed"));
+        isWindowedValue = System.Convert.ToBoolean(PlayerPrefs.GetInt("isWindowed"));
+        //isWindowed = System.Convert.ToBoolean(isWindowedValue);
+        toggleWindow.isOn = isWindowedValue;
 
-        if (isWindowedValue == null)
+        Debug.Log(isWindowedValue);
+        /*if (isWindowedValue == null)
         {
             Screen.fullScreen = false;
             isWindowed = true;
-        }
+        }*/
+    }
+    private void Update()
+    {
+        Debug.Log(toggleWindow.isOn);
+        Debug.Log(isWindowedValue);
     }
 
-   public void ClockToggleButton()
+    public void ClockToggleButton()
     {
-        isWindowed = isWindowed ? false : true;
-        Debug.Log(isWindowed);
+        isWindowedValue = isWindowedValue ? false : true;
     }
 
     public void ClickExitButton()
@@ -59,34 +68,34 @@ public class OptionCtrl : MonoBehaviour
         switch (resolution.value)
         {
             case 0:
-                Screen.SetResolution(2560, 1440, isWindowed);
+                Screen.SetResolution(2560, 1440, isWindowedValue);
                 break;
             case 1:
-                Screen.SetResolution(1920, 1080, isWindowed);
+                Screen.SetResolution(1920, 1080, isWindowedValue);
                 break;
             case 2:
-                Screen.SetResolution(1680, 1050, isWindowed);
+                Screen.SetResolution(1680, 1050, isWindowedValue);
                 break;
             case 3:
-                Screen.SetResolution(1600, 900, isWindowed);
+                Screen.SetResolution(1600, 900, isWindowedValue);
                 break;
             case 4:
-                Screen.SetResolution(1440, 900, isWindowed);
+                Screen.SetResolution(1440, 900, isWindowedValue);
                 break;
             case 5:
-                Screen.SetResolution(1280, 1024, isWindowed);
+                Screen.SetResolution(1280, 1024, isWindowedValue);
                 break;
             case 6:
-                Screen.SetResolution(1280, 800, isWindowed);
+                Screen.SetResolution(1280, 800, isWindowedValue);
                 break;
             case 7:
-                Screen.SetResolution(1280, 720, isWindowed);
+                Screen.SetResolution(1280, 720, isWindowedValue);
                 break;
             case 8:
-                Screen.SetResolution(1152, 864, isWindowed);
+                Screen.SetResolution(1152, 864, isWindowedValue);
                 break;
             case 9:
-                Screen.SetResolution(800, 600, isWindowed);
+                Screen.SetResolution(800, 600, isWindowedValue);
                 break;
         }
 
@@ -95,6 +104,12 @@ public class OptionCtrl : MonoBehaviour
         PlayerPrefs.SetFloat("EffectValue", effect.value);
         PlayerPrefs.SetInt("ControlValue", control.value);
         PlayerPrefs.SetInt("ResolutionValue", resolution.value);
-        PlayerPrefs.SetString("isWindowed", isWindowed.ToString());
+        PlayerPrefs.SetInt("isWindowed", System.Convert.ToInt32(isWindowedValue));
+    }
+
+    public void OnClickOptionClose()
+    {
+        GameObject option = transform.GetChild(0).gameObject;
+        option.SetActive(false);
     }
 }
