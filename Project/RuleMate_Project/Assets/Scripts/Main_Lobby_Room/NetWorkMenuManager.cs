@@ -26,7 +26,7 @@ public class NetWorkMenuManager : MonoBehaviourPunCallbacks
     [Header("Room")]
     public GameObject RoomPanel;
     public Text[] PlayerNickNameTexts;
-
+    public Text txtRoomName;
     public Text[] ChatText;
     public InputField ChatInput;
 
@@ -190,6 +190,7 @@ public class NetWorkMenuManager : MonoBehaviourPunCallbacks
             roomName = RoomInput.text;
         }
 
+        //txtRoomName.text = roomName;
         PhotonNetwork.CreateRoom(roomName, new RoomOptions { MaxPlayers = 2 });
     }
 
@@ -236,6 +237,8 @@ public class NetWorkMenuManager : MonoBehaviourPunCallbacks
 
         for (int i = 0; i < PhotonNetwork.PlayerList.Length; i++)
             PlayerNickNameTexts[i].text = PhotonNetwork.PlayerList[i].NickName;
+
+        txtRoomName.text = PhotonNetwork.CurrentRoom.Name;
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)

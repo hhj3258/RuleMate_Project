@@ -879,7 +879,6 @@ MonoBehaviour:
   NetMgr: {fileID: 0}
   TitlePanel: {fileID: 0}
   txtPressKey: {fileID: 0}
-  OptionPanel: {fileID: 1132241495936780431}
   MainMenuPanel: {fileID: 0}
   LocalRoomPanel: {fileID: 0}
   txtMayPlayer: {fileID: 0}
@@ -907,7 +906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limitTime: 90
-  endTime: 60
+  endTime: 0
   timer: {fileID: 1465406846}
 --- !u!1 &42578211
 GameObject:
@@ -10993,7 +10992,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Are you Ready?
+  m_Text: "\uC900\uBE44\uC644\uB8CC!"
 --- !u!222 &559445387
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19305,7 +19304,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 306.0403, y: 95.197}
+  m_SizeDelta: {x: 233.77, y: 95.197}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1080158424
 MonoBehaviour:

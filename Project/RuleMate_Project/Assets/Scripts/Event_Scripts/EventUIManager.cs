@@ -19,12 +19,13 @@ public class EventUIManager : MonoBehaviour
         if(LocalGameManager.instance != null)
             DayPanel.transform.Find("Nday").GetComponent<Text>().text = LocalGameManager.instance.toDay.ToString() + "DAY";
         Invoke("DayPanelFade", 0.5f);
+
         OptionPanel = GameObject.Find("OptionUI").transform.Find("Option").gameObject;
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && DayPanel.activeSelf == false)
         {
             if (OptionPanel.activeSelf == true)
             {
@@ -41,12 +42,12 @@ public class EventUIManager : MonoBehaviour
         if (pausePanel.activeSelf)
         {
             pausePanel.SetActive(false);
-            Time.timeScale = 1;
+            //Time.timeScale = 1;
         }
         else
         {
             pausePanel.SetActive(true);
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
         }
     }
 
