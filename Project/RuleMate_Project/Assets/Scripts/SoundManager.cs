@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
-    Dictionary<string, AudioSource> Songs;
+    public Dictionary<string, AudioSource> Songs;
     public string TitleSong;
     public string LobbySong;
     public string InGameSong;
