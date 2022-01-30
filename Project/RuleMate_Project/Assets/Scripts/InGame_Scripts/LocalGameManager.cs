@@ -46,14 +46,10 @@ public class LocalGameManager : MonoBehaviour
     {
         randDay04Event = Random.Range(1, 9);
         randDay08Event = Random.Range(1, 9);
-        if (randDay04Event == randDay08Event)
+
+        while(randDay04Event==randDay08Event)
         {
-            if (randDay04Event == 8)
-                randDay08Event = 7;
-            else if (randDay04Event == 1)
-                randDay08Event = 2;
-            else
-                randDay08Event = randDay04Event + 1;
+            randDay08Event = Random.Range(1, 9);
         }
     }
 
