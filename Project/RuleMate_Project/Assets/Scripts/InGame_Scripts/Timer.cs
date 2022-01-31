@@ -12,7 +12,6 @@ public class Timer : MonoBehaviour
     private float second;
 
     public Text timer;
-
     bool isGameStart;
 
     //나중에 쓸꺼
@@ -55,7 +54,7 @@ public class Timer : MonoBehaviour
         }
         else if (isTimeOver == false)
         {
-            timer.text = ((int)minute + " : " + (int)second).ToString();
+            timer.text = string.Format("{0:D2} : {1:D2}", (int)minute, (int)second);
         }
     }
 }
