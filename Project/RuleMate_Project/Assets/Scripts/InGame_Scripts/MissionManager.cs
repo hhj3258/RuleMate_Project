@@ -5,32 +5,16 @@ using UnityEngine.UI;
 
 public class MissionManager : MonoBehaviour
 {
-    public Text mayScoreTxt;
-    public Text breyScoreTxt;
+    public Slider maySlider;
+    public Slider breySlider;
 
-    int mayScore = 1;
-    int breyScore = 1;
+    // 메이 리스트에는 메이가 정리해야 할 오브젝트들
+    public List<GameObject> objMayMissionList;
+    public List<GameObject> txtMayMissionList;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    // 브레이 리스트에는 브레이가 어지럽혀야 할 오브젝트들
+    public List<GameObject> objBreyMissionList;
+    public List<GameObject> txtBreyMissionList;
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        mayScoreTxt.text = mayScore.ToString();
-        breyScoreTxt.text = breyScore.ToString();
-    }
-
-    protected void MayScoreUp()
-    {
-        mayScore += 1;
-    }
-
-    protected void BreyScoreUp()
-    {
-        breyScore += 1;
-    }
+    public List<bool> isCleanList;
 }
