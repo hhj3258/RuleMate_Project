@@ -19,7 +19,7 @@ public class MultiPlayerManager : PlayerManager
         //Jump();
         SetAnim();
 
-        if (im.keyCatchOrRelease)
+        if (im.keyInterAction)
         {
             photonView.RPC("CatchOrRelease", RpcTarget.All);
         }

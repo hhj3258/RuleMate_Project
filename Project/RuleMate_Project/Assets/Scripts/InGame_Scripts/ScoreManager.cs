@@ -6,9 +6,10 @@ using DG.Tweening;
 
 public class ScoreManager : MonoBehaviour
 {
-    [Header("미션 종류")]
-    [SerializeField] List<GameObject> May_Missions;
-    [SerializeField] List<GameObject> Brey_Missions;
+    //[Header("미션 종류")]
+    //[SerializeField] List<GameObject> May_Missions;
+    //[SerializeField] List<GameObject> Brey_Missions;
+    [SerializeField] MissionManager missionMgr;
 
     [Header("미션 토글")]
     [SerializeField] Toggle toilet;
@@ -42,15 +43,11 @@ public class ScoreManager : MonoBehaviour
 
     void OnEnable()
     {
-        foreach (var obj in May_Missions)
+        foreach (var isClean in missionMgr.isCleanList)
         {
-            if (obj.activeSelf == false)
+            if (isClean)
                 MayScore++;
-        }
-
-        foreach (var obj in Brey_Missions)
-        {
-            if (obj.activeSelf == false)
+            else
                 BreyScore++;
         }
 
@@ -68,13 +65,12 @@ public class ScoreManager : MonoBehaviour
     void ToggleUI()
     {
         // isOn 이 true 이면 주황색
-        // May_Missions 는 메이가 해결을 못했다면 active = true 임
-        toilet.isOn = May_Missions[0].activeSelf;
-        washDish.isOn = May_Missions[1].activeSelf;
-        trash.isOn = May_Missions[2].activeSelf;
-        TV.isOn = May_Missions[3].activeSelf;
-        cloth.isOn = May_Missions[4].activeSelf;
-        livingTrash.isOn = May_Missions[5].activeSelf;
+        toilet.isOn = !missionMgr.isCleanList[0];
+        washDish.isOn = !missionMgr.isCleanList[1];
+        trash.isOn = !missionMgr.isCleanList[2];
+        TV.isOn = !missionMgr.isCleanList[3];
+        cloth.isOn = !missionMgr.isCleanList[4];
+        livingTrash.isOn = !missionMgr.isCleanList[5];
 
         toilet.transform.localScale = Vector3.zero;
         washDish.transform.localScale = Vector3.zero;
@@ -103,10 +99,10 @@ public class ScoreManager : MonoBehaviour
 
     void ScoreCalc()
     {
-        float May_sliderValue = 0;
-        float Brey_sliderValue = 0;
+        float May_sliderValue = 0f;
+        float Brey_sliderValue = 0f;
 
-        May_sliderValue = MayScore * (100f / May_Missions.Count);
+        May_sliderValue = MayScore * (100f / missionMgr.isCleanList.Count);
         mySequence.Join(May_ScoreSlider.DOValue(May_sliderValue / 100f, 1f));
         May_ScoreText.text = Mathf.Round(May_sliderValue) +"/100";
 

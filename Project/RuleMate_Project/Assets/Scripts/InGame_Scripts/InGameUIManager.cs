@@ -36,7 +36,8 @@ public class InGameUIManager : UIManager
         txtMayScore.text = LocalGameManager.instance.mayScore.ToString();
         txtBreyScore.text = LocalGameManager.instance.breyScore.ToString();
 
-        OptionPanel = GameObject.Find("OptionUI").transform.Find("Option").gameObject;
+        if (GameObject.Find("OptionUI") != null)
+            OptionPanel = GameObject.Find("OptionUI").transform.Find("Option").gameObject;
     }
 
     private void Update()

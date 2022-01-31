@@ -7,9 +7,8 @@ public class InputManager : MonoBehaviour
 {
     [HideInInspector] public float h; // A || D
     [HideInInspector] public float v; // W || S
-    [HideInInspector] public bool keyCatchOrRelease; // 잡기 || 놓기
+    [HideInInspector] public bool keyInterAction; // 상호작용키
     [HideInInspector] public bool keyPause;
-    //[HideInInspector] public bool keyJump;
 
     virtual protected void Update()
     {
@@ -19,7 +18,7 @@ public class InputManager : MonoBehaviour
         {
             h = Input.GetAxisRaw("Horizontal");
             v = Input.GetAxisRaw("Vertical");
-            keyCatchOrRelease = Input.GetKeyDown(KeyCode.X);
+            keyInterAction = Input.GetKeyDown(KeyCode.X);
         }
         else
         {

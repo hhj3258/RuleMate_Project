@@ -14,7 +14,7 @@ public class Player02 : PlayerManager
     {
         SetAnim();
 
-        if (im.keyCatchOrRelease)
+        if (im.keyInterAction)
         {
             //photonView.RPC("CatchOrRelease", RpcTarget.All);
             CatchOrRelease();
