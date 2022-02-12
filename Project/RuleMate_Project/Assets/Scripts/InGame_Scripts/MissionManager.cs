@@ -5,6 +5,15 @@ using UnityEngine.UI;
 
 public class MissionManager : MonoBehaviour
 {
+    public static MissionManager instance;
+
+    private void Awake()
+    {
+        if (instance == null) instance = this;
+        else if (instance != null) return;
+        DontDestroyOnLoad(gameObject);
+    }
+
     public Slider maySlider;
     public Slider breySlider;
 

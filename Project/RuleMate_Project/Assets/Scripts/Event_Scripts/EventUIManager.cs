@@ -20,7 +20,8 @@ public class EventUIManager : MonoBehaviour
             DayPanel.transform.Find("Nday").GetComponent<Text>().text = LocalGameManager.instance.toDay.ToString() + "DAY";
         Invoke("DayPanelFade", 0.5f);
 
-        OptionPanel = GameObject.Find("OptionUI").transform.Find("Option").gameObject;
+        if (GameObject.Find("OptionUI") != null)
+            OptionPanel = GameObject.Find("OptionUI").transform.Find("Option").gameObject;
     }
 
     private void Update()
