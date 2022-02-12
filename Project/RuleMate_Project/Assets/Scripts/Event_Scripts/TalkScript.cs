@@ -13,7 +13,6 @@ public class TalkScript : TalkEvent
 
     [SerializeField] Text txtClick;
     Sequence sequence;
-
     void Start()
     {
         if (LocalGameManager.instance == null)
@@ -46,6 +45,11 @@ public class TalkScript : TalkEvent
         {
             Debug.Log("대화 끝");
             LoadingSceneController.LoadingInstance.LoadScene("Local_InGame");
+            
+            if (LocalGameManager.instance.toDay != 1) 
+            {
+                LoadingSceneController.LoadingInstance.LoadScene("Rule_Select");
+            }
             return;
         }
 
