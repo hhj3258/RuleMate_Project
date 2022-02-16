@@ -3,7 +3,7 @@
 ## [YouTube Link](https://youtu.be/tVv9VbjxU5U)
 ![image](https://user-images.githubusercontent.com/70702088/146522520-4fc75367-5d88-4367-88aa-0f3986e3dc59.png)
 
-## Team BlueBird
+# Team BlueBird
 
 ### 팀원 및 역할
 이름 | 역할 | GitHub
