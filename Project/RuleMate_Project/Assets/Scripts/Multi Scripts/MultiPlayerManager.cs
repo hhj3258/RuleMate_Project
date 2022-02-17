@@ -8,7 +8,7 @@ public class MultiPlayerManager : PlayerManager
     void Start()
     {
         rigid = playerPrefab.GetComponent<Rigidbody>();
-        anim = playerPrefab.GetComponent<Animator>();
+        //anim = playerPrefab.GetComponent<Animator>();
     }
 
     void Update()
@@ -34,11 +34,11 @@ public class MultiPlayerManager : PlayerManager
         Turn();
     }
 
-    protected override void SetAnim()
-    {
-        if (im.h != 0 || im.v != 0)
-            anim.SetBool("isMove", true);
-        else
-            anim.SetBool("isMove", false);
-    }
+    //protected override void SetAnim()
+    //{
+    //    if (im.h != 0 || im.v != 0)
+    //        anim.SetBool("isMove", true);
+    //    else
+    //        anim.SetBool("isMove", false);
+    //}
 }

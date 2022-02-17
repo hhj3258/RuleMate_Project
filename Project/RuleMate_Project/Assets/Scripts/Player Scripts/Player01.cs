@@ -9,7 +9,7 @@ public class Player01 : PlayerManager
         //playerPrefab = GameObject.Find("TestPlayer1");
         //playerPrefab = GameManager.Instance.playerPrefab;
         rigid = playerPrefab.GetComponent<Rigidbody>();
-        anim = playerPrefab.GetComponent<Animator>();
+        //anim = playerPrefab.GetComponent<Animator>();
         
     }
 
@@ -30,11 +30,11 @@ public class Player01 : PlayerManager
         Turn();
     }
 
-    protected override void SetAnim()
-    {
-        if (im.h != 0 || im.v != 0)
-            anim.SetBool("isMove", true);
-        else
-            anim.SetBool("isMove", false);
-    }
+    //protected override void SetAnim()
+    //{
+    //    if (im.h != 0 || im.v != 0)
+    //        anim.SetBool("isMove", true);
+    //    else
+    //        anim.SetBool("isMove", false);
+    //}
 }
