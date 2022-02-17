@@ -27,6 +27,7 @@ public abstract class PlayerManager : MonoBehaviourPun
     private void Awake()
     {
         playerPrefab = this.gameObject;
+        anim = playerPrefab.GetComponent<Animator>();
     }
 
     protected void Move()
@@ -46,16 +47,6 @@ public abstract class PlayerManager : MonoBehaviourPun
         Quaternion newRotation = Quaternion.LookRotation(movement);
         rigid.rotation = Quaternion.Slerp(rigid.rotation, newRotation, rotSpeed * Time.deltaTime);
     }
-
-    //protected void Jump()
-    //{
-    //    // 점프키를 눌렀으며 착지하지 않았다면
-    //    if (im.keyJump && !isJumping)
-    //    {
-    //        rigid.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
-    //        isJumping = true;
-    //    }
-    //}
 
     // 물체 잡기, 놓기 시 오브젝트 세팅
 
@@ -97,11 +88,11 @@ public abstract class PlayerManager : MonoBehaviourPun
             }
             else
             {
-                if(objectMonitor)
+                if (objectMonitor)
                     objCol.GetComponent<ObjectInitSetting>().ObjCleaning();
 
                 // 놓을 시 부모 오브젝트를 null
-                objCol.transform.SetParent(null);   
+                objCol.transform.SetParent(null);
                 ObjSetting(false);
                 objCol = null;  // objCol도 비워줌
             }
@@ -126,10 +117,35 @@ public abstract class PlayerManager : MonoBehaviourPun
         }
     }
 
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    isJumping = false;  // 오브젝트에 닿으면 점프 가능
-    //}
+    protected void SetAnim()
+    {
+        if (im.h != 0 || im.v != 0)
+            anim.SetBool("isMove", true);
+        else
+            anim.SetBool("isMove", false);
+    }
 
-    protected abstract void SetAnim();
+    float delayTime = 0f;
+    void SetContinuousAnim()
+    {
+        if (im.keyInterAction)
+        {
+            anim.SetBool("isInterActive", true);
+            delayTime = 0f;
+        }
+        else
+        {
+            delayTime += Time.deltaTime;
+            if (delayTime >= 0.3f)
+                anim.SetBool("isInterActive", false);
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag.Equals("ContinuousInterActiveObj"))
+        {
+            SetContinuousAnim();
+        }
+    }
 }

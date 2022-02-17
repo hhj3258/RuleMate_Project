@@ -27,11 +27,11 @@ public class Player02 : PlayerManager
         Turn();
     }
 
-    protected override void SetAnim()
-    {
-        if (im.h != 0 || im.v != 0)
-            anim.SetBool("isMove", true);
-        else
-            anim.SetBool("isMove", false);
-    }
+    //protected override void SetAnim()
+    //{
+    //    if (im.h != 0 || im.v != 0)
+    //        anim.SetBool("isMove", true);
+    //    else
+    //        anim.SetBool("isMove", false);
+    //}
 }
